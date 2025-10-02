@@ -69,7 +69,7 @@ PowerShellVersion = '7.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Install-SpecKitTemplate', 'Test-ZipArchive', 'Expand-SafeArchive', 
+FunctionsToExport = 'Install-SpecKitTemplate', 'Test-ZipArchive', 'Expand-SafeArchive',
                'Find-ReleaseAsset', 'Get-LatestRelease', 'Save-ReleaseAsset'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
