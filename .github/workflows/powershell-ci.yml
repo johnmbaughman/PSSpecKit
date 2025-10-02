@@ -14,9 +14,13 @@ on:
 jobs:
   lint-and-test:
     runs-on: windows-latest
-    steps:
+    steps:    
       - uses: actions/checkout@v4
 
+      - name: List tests directory contents
+        run: |
+          ls -l tests
+      
       - name: Install PSScriptAnalyzer and Pester
         run: |
           pwsh -Command "Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense"
