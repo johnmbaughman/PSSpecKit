@@ -68,7 +68,7 @@ function Write-Info {
         [Parameter(Mandatory=$true)]
         [string]$Message
     )
-    Write-Host "INFO: $Message" 
+    Write-Information "INFO: $Message" -InformationAction Continue
 }
 
 function Write-Success { 
@@ -76,7 +76,7 @@ function Write-Success {
         [Parameter(Mandatory=$true)]
         [string]$Message
     )
-    Write-Host "$([char]0x2713) $Message" 
+    Write-Information "$([char]0x2713) $Message" -InformationAction Continue
 }
 
 function Write-WarningMsg { 
@@ -92,10 +92,10 @@ function Write-Err {
         [Parameter(Mandatory=$true)]
         [string]$Message
     )
-    Write-Host "ERROR: $Message" -ForegroundColor Red 
+    Write-Error "ERROR: $Message" -ErrorAction Continue
 }
 
-function Validate-Environment {
+function Test-Environment {
     if (-not $CURRENT_BRANCH) {
         Write-Err 'Unable to determine current feature'
         if ($HAS_GIT) { Write-Info "Make sure you're on a feature branch" } else { Write-Info 'Set SPECIFY_FEATURE environment variable or create a feature first' }
@@ -114,7 +114,7 @@ function Validate-Environment {
     }
 }
 
-function Extract-PlanField {
+function Get-PlanField {
     param(
         [Parameter(Mandatory=$true)]
         [string]$FieldPattern,
@@ -132,17 +132,17 @@ function Extract-PlanField {
     } | Select-Object -First 1
 }
 
-function Parse-PlanData {
+function Read-PlanData {
     param(
         [Parameter(Mandatory=$true)]
         [string]$PlanFile
     )
     if (-not (Test-Path $PlanFile)) { Write-Err "Plan file not found: $PlanFile"; return $false }
     Write-Info "Parsing plan data from $PlanFile"
-    $script:NEW_LANG        = Extract-PlanField -FieldPattern 'Language/Version' -PlanFile $PlanFile
-    $script:NEW_FRAMEWORK   = Extract-PlanField -FieldPattern 'Primary Dependencies' -PlanFile $PlanFile
-    $script:NEW_DB          = Extract-PlanField -FieldPattern 'Storage' -PlanFile $PlanFile
-    $script:NEW_PROJECT_TYPE = Extract-PlanField -FieldPattern 'Project Type' -PlanFile $PlanFile
+    $script:NEW_LANG        = Get-PlanField -FieldPattern 'Language/Version' -PlanFile $PlanFile
+    $script:NEW_FRAMEWORK   = Get-PlanField -FieldPattern 'Primary Dependencies' -PlanFile $PlanFile
+    $script:NEW_DB          = Get-PlanField -FieldPattern 'Storage' -PlanFile $PlanFile
+    $script:NEW_PROJECT_TYPE = Get-PlanField -FieldPattern 'Project Type' -PlanFile $PlanFile
 
     if ($NEW_LANG) { Write-Info "Found language: $NEW_LANG" } else { Write-WarningMsg 'No language information found in plan' }
     if ($NEW_FRAMEWORK) { Write-Info "Found framework: $NEW_FRAMEWORK" }
@@ -400,20 +400,20 @@ function Update-AllExistingAgents {
     return $ok
 }
 
-function Print-Summary {
-    Write-Host ''
+function Write-Summary {
+    Write-Information ''
     Write-Info 'Summary of changes:'
-    if ($NEW_LANG) { Write-Host "  - Added language: $NEW_LANG" }
-    if ($NEW_FRAMEWORK) { Write-Host "  - Added framework: $NEW_FRAMEWORK" }
-    if ($NEW_DB -and $NEW_DB -ne 'N/A') { Write-Host "  - Added database: $NEW_DB" }
-    Write-Host ''
+    if ($NEW_LANG) { Write-Information "  - Added language: $NEW_LANG" }
+    if ($NEW_FRAMEWORK) { Write-Information "  - Added framework: $NEW_FRAMEWORK" }
+    if ($NEW_DB -and $NEW_DB -ne 'N/A') { Write-Information "  - Added database: $NEW_DB" }
+    Write-Information ''
     Write-Info 'Usage: ./update-agent-context.ps1 [-AgentType claude|gemini|copilot|cursor|qwen|opencode|codex|windsurf|kilocode|auggie|roo]'
 }
 
 function Main {
-    Validate-Environment
+    Test-Environment
     Write-Info "=== Updating agent context files for feature $CURRENT_BRANCH ==="
-    if (-not (Parse-PlanData -PlanFile $NEW_PLAN)) { Write-Err 'Failed to parse plan data'; exit 1 }
+    if (-not (Read-PlanData -PlanFile $NEW_PLAN)) { Write-Err 'Failed to parse plan data'; exit 1 }
     $success = $true
     if ($AgentType) {
         Write-Info "Updating specific agent: $AgentType"
@@ -423,7 +423,7 @@ function Main {
         Write-Info 'No agent specified, updating all existing agent files...'
         if (-not (Update-AllExistingAgents)) { $success = $false }
     }
-    Print-Summary
+    Write-Summary
     if ($success) { Write-Success 'Agent context update completed successfully'; exit 0 } else { Write-Err 'Agent context update completed with errors'; exit 1 }
 }
 

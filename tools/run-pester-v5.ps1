@@ -4,7 +4,7 @@ param(
 	[switch]$AutoInstall  # If set, install Pester v5 automatically into CurrentUser scope when missing
 )
 
-function Ensure-PesterV5 {
+function Test-PesterV5Available {
 	try {
 		$m = Get-Module -ListAvailable -Name Pester | Sort-Object Version -Descending | Select-Object -First 1
 		if ($m -and $m.Version -ge [Version]'5.0.0') {
@@ -16,10 +16,10 @@ function Ensure-PesterV5 {
 	}
 }
 
-if (-not (Ensure-PesterV5)) {
-	Write-Host 'Pester v5 is not available in your session.'
+if (-not (Test-PesterV5Available)) {
+	Write-Information 'Pester v5 is not available in your session.' -InformationAction Continue
 	if ($AutoInstall) {
-		Write-Host 'Installing Pester v5 to CurrentUser scope...'
+		Write-Information 'Installing Pester v5 to CurrentUser scope...' -InformationAction Continue
 		try {
 			Install-Module -Name Pester -MinimumVersion 5.0.0 -Scope CurrentUser -Force -AcceptLicense
 		} catch {
@@ -27,16 +27,16 @@ if (-not (Ensure-PesterV5)) {
 			exit 1
 		}
 	} else {
-		Write-Host "Run this to install Pester v5 for your user:"
-		Write-Host "  pwsh -Command \"Install-Module Pester -MinimumVersion 5.0.0 -Scope CurrentUser -Force -AcceptLicense\""
-		Write-Host 'Or re-run this helper with -AutoInstall to install automatically.'
+		Write-Information "Run this to install Pester v5 for your user:" -InformationAction Continue
+		Write-Information "  pwsh -Command `"Install-Module Pester -MinimumVersion 5.0.0 -Scope CurrentUser -Force -AcceptLicense`"" -InformationAction Continue
+		Write-Information 'Or re-run this helper with -AutoInstall to install automatically.' -InformationAction Continue
 		exit 2
 	}
 }
 
 Import-Module Pester -MinimumVersion 5.0.0 -Force
-Write-Host "Loaded Pester: $((Get-Module Pester).Version)"
+Write-Information "Loaded Pester: $((Get-Module Pester).Version)" -InformationAction Continue
 
 $r = Pester\Invoke-Pester -Path .\tests -PassThru
-Write-Host "FailedCount=$($r.FailedCount)"
+Write-Information "FailedCount=$($r.FailedCount)" -InformationAction Continue
 if ($r.FailedCount -gt 0) { exit 1 } else { exit 0 }
