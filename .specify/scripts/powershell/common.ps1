@@ -8,8 +8,7 @@ function Get-RepoRoot {
             return $result
         }
     } catch {
-        # Git command failed - intentionally suppressed as we fall back to script location
-        Write-Verbose "Git not available or command failed: $_"
+        # Git command failed
     }
     
     # Fall back to script location for non-git repos
@@ -29,8 +28,7 @@ function Get-CurrentBranch {
             return $result
         }
     } catch {
-        # Git command failed - intentionally suppressed as we fall back to environment or feature dir
-        Write-Verbose "Git not available or command failed: $_"
+        # Git command failed
     }
     
     # For non-git repos, try to find the latest feature directory
