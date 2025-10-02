@@ -1,8 +1,8 @@
 # Requires: PowerShell 7+
 Describe 'Install-SpecKitTemplate' {
-    # Dot-source the script once so helper functions are available to all tests
+    # Import the module so functions are available to all tests
     BeforeAll {
-    . "$PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1"
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
         # Ensure sample.zip exists for extraction tests
         & "$PSScriptRoot\create-sample-zip.ps1"
     }
@@ -46,9 +46,9 @@ Describe 'Install-SpecKitTemplate' {
 }
 # Requires: PowerShell 7+
 Describe 'Install-SpecKitTemplate' {
-    # Dot-source the script once so helper functions are available to all tests
+    # Import the module so functions are available to all tests
     BeforeAll {
-    . "$PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1"
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
         # Ensure sample.zip exists for extraction tests
         & "$PSScriptRoot\create-sample-zip.ps1"
     }

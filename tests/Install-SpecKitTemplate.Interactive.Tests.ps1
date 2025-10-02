@@ -1,7 +1,7 @@
 Describe 'Install-SpecKitTemplate interactive flows' {
     BeforeAll {
-    # Dot-source the script under test
-    . $PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1
+    # Import the module
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
     }
 
     It 'prompts and accepts typed agent when no candidates found' {
@@ -61,8 +61,8 @@ Describe 'Install-SpecKitTemplate interactive flows' {
 }
 Describe 'Install-SpecKitTemplate interactive flows' {
     BeforeAll {
-    # Dot-source the script under test
-    . $PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1
+    # Import the module
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
     }
 
     It 'prompts and accepts typed agent when no candidates found' {
