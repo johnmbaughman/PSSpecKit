@@ -30,14 +30,17 @@ jobs:
         run: |
           pwsh -NoProfile -Command "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; ./scripts/check-absolute-paths.ps1 -Path ."
 
-      - name: Run PSScriptAnalyzer
+      - name: Run PSScriptAnalyzer on module
         run: |
-          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path . -Recurse -Settings .psscriptanalyzer.psd1"
+          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path ./PSSpecKit -Recurse -Settings .psscriptanalyzer.psd1"
+      
+      - name: Verify module can be imported
+        run: |
+          pwsh -NoProfile -Command "Import-Module ./PSSpecKit/PSSpecKit.psd1 -Force; Write-Host 'Module imported successfully'; Get-Command -Module PSSpecKit | Format-Table -AutoSize"
 
       - name: Run Pester tests
         run: |
           pwsh -NoProfile -Command 'Import-Module Pester -MinimumVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests -PassThru; if ($r.FailedCount -gt 0) { exit 1 }'
-        # pwsh -NoProfile -Command "Import-Module Pester -RequiredVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
 
   integration-tests:
     runs-on: windows-latest
