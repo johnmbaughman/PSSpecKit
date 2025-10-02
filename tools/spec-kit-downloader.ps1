@@ -156,70 +156,87 @@ function Safe-Extract {
     }
 }
 
-# Main
-try {
-    Write-Log "Starting spec-kit downloader"
+function Invoke-SpecKitDownloader {
+    param(
+        [string]$Agent,
+        [ValidateSet('ps','sh')][string]$Shell = 'ps',
+        [string]$Version = 'latest',
+        [int]$Retry = 3,
+        [switch]$Force,
+        [string]$Path = (Get-Location).Path,
+        [switch]$Interactive
+    )
 
-    $owner = 'github'
-    $repo = 'spec-kit'
+    try {
+        Write-Log "Starting spec-kit downloader"
 
-    # Determine release
-    if ($Version -ne 'latest') {
-        Write-Log "Looking up release $Version"
-        $url = "https://api.github.com/repos/$owner/$repo/releases/tags/$Version"
-        $headers = Get-GitHubApiHeaders
-        $release = Invoke-WithRetry -ScriptBlock { Invoke-RestMethod -Uri $url -Headers $headers -UseBasicParsing } -Retries $Retry
-    } else {
-        Write-Log "Fetching latest release metadata"
-        $release = Get-LatestReleaseTag -Owner $owner -Repo $repo
-    }
+        $owner = 'github'
+        $repo = 'spec-kit'
 
-    if (-not $release) { throw 'Release not found' }
-
-    # Agent auto-selection
-    if (-not $Agent) {
-        # Try to infer agent from release body or assets (simplified heuristic)
-        $candidates = @()
-        foreach ($a in $release.assets) {
-            if ($a.name -match 'spec-kit-template-([^-]+)-') { $candidates += $matches[1] }
-        }
-        $candidates = $candidates | Select-Object -Unique
-        if ($candidates.Count -eq 0) {
-            Write-Log 'No agent candidates found in release; defaulting to "default"' WARN
-            $Agent = 'default'
-        } elseif ($candidates.Count -eq 1) {
-            $Agent = $candidates[0]
-            Write-Log "Auto-selected agent: $Agent"
+        # Determine release
+        if ($Version -ne 'latest') {
+            Write-Log "Looking up release $Version"
+            $url = "https://api.github.com/repos/$owner/$repo/releases/tags/$Version"
+            $headers = Get-GitHubApiHeaders
+            $release = Invoke-WithRetry -ScriptBlock { Invoke-RestMethod -Uri $url -Headers $headers -UseBasicParsing } -Retries $Retry
         } else {
-            if ($Interactive) {
-                Write-Log "Multiple agents found: $($candidates -join ', '); interactive selection enabled"
-                $i = 0
-                foreach ($c in $candidates) { Write-Output "[$i] $c"; $i++ }
-                $choice = Read-Host 'Select an agent index'
-                $Agent = $candidates[([int]$choice)]
-            } else {
-                # pick the first candidate as 'sensible' default
+            Write-Log "Fetching latest release metadata"
+            $release = Get-LatestReleaseTag -Owner $owner -Repo $repo
+        }
+
+        if (-not $release) { throw 'Release not found' }
+
+        # Agent auto-selection
+        if (-not $Agent) {
+            # Try to infer agent from release body or assets (simplified heuristic)
+            $candidates = @()
+            foreach ($a in $release.assets) {
+                if ($a.name -match 'spec-kit-template-([^-]+)-') { $candidates += $matches[1] }
+            }
+            $candidates = $candidates | Select-Object -Unique
+            if ($candidates.Count -eq 0) {
+                Write-Log 'No agent candidates found in release; defaulting to "default"' WARN
+                $Agent = 'default'
+            } elseif ($candidates.Count -eq 1) {
                 $Agent = $candidates[0]
-                Write-Log "Auto-selected agent (first candidate): $Agent"
+                Write-Log "Auto-selected agent: $Agent"
+            } else {
+                if ($Interactive) {
+                    Write-Log "Multiple agents found: $($candidates -join ', '); interactive selection enabled"
+                    $i = 0
+                    foreach ($c in $candidates) { Write-Output "[$i] $c"; $i++ }
+                    $choice = Read-Host 'Select an agent index'
+                    $Agent = $candidates[([int]$choice)]
+                } else {
+                    # pick the first candidate as 'sensible' default
+                    $Agent = $candidates[0]
+                    Write-Log "Auto-selected agent (first candidate): $Agent"
+                }
             }
         }
+
+        $asset = Find-ReleaseAsset -Release $release -Agent $Agent -Shell $Shell
+        if (-not $asset) { throw "No matching asset found for agent=$Agent shell=$Shell" }
+
+        $outZip = Join-Path -Path ([System.IO.Path]::GetTempPath()) -ChildPath $asset.name
+        Download-Asset -Asset $asset -OutPath $outZip
+
+        if (-not (Validate-Zip -ZipPath $outZip)) { throw 'Downloaded archive failed validation' }
+
+        if (-not (Test-Path $Path)) { New-Item -Path $Path -ItemType Directory | Out-Null }
+
+        if (-not (Safe-Extract -ZipPath $outZip -TargetPath $Path -Force:$Force)) { throw 'Extraction failed' }
+
+        Write-Log "Success: templates extracted to $Path"
+        return $true
+    } catch {
+        Write-Log "ERROR: $_" ERROR
+        return $false
     }
+}
 
-    $asset = Find-ReleaseAsset -Release $release -Agent $Agent -Shell $Shell
-    if (-not $asset) { throw "No matching asset found for agent=$Agent shell=$Shell" }
-
-    $outZip = Join-Path -Path ([System.IO.Path]::GetTempPath()) -ChildPath $asset.name
-    Download-Asset -Asset $asset -OutPath $outZip
-
-    if (-not (Validate-Zip -ZipPath $outZip)) { throw 'Downloaded archive failed validation' }
-
-    if (-not (Test-Path $Path)) { New-Item -Path $Path -ItemType Directory | Out-Null }
-
-    if (-not (Safe-Extract -ZipPath $outZip -TargetPath $Path -Force:$Force)) { throw 'Extraction failed' }
-
-    Write-Log "Success: templates extracted to $Path"
-    exit 0
-} catch {
-    Write-Log "ERROR: $_" ERROR
-    exit 1
+# Only invoke main flow when the script is executed directly (not dot-sourced for tests)
+if ($MyInvocation.InvocationName -ne '.') {
+    # call using top-level params if the script was executed
+    Invoke-SpecKitDownloader -Agent $Agent -Shell $Shell -Version $Version -Retry $Retry -Force:$Force -Path $Path -Interactive:$Interactive | Out-Null
 }
