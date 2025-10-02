@@ -32,8 +32,8 @@ This script returns explicit numeric exit codes when executed directly. Code val
 - 4 : Extraction error
 
 .EXAMPLE
-pwsh tools\spec-kit-downloader.ps1
-pwsh tools\spec-kit-downloader.ps1 -Agent octo -Shell ps -Path .\templates -Force
+pwsh tools\Install-SpecKitTemplate.ps1
+pwsh tools\Install-SpecKitTemplate.ps1 -Agent octo -Shell ps -Path .\templates -Force
 #>
 
 param(

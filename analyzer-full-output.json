@@ -1,0 +1,4056 @@
+[
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 45,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "  "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 45,
+        "ColumnNumber": 3,
+        "Offset": 0,
+        "Line": "  "
+      },
+      "StartLineNumber": 45,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 45,
+      "EndColumnNumber": 3,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "  "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 45,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 45,
+        "EndColumnNumber": 3,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 45,
+          "Column": 1
+        },
+        "End": {
+          "Line": 45,
+          "Column": 3
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 45,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 48,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "  "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 48,
+        "ColumnNumber": 3,
+        "Offset": 0,
+        "Line": "  "
+      },
+      "StartLineNumber": 48,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 48,
+      "EndColumnNumber": 3,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "  "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 48,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 48,
+        "EndColumnNumber": 3,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 48,
+          "Column": 1
+        },
+        "End": {
+          "Line": 48,
+          "Column": 3
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 48,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 62,
+        "ColumnNumber": 86,
+        "Offset": 0,
+        "Line": "if (-not (Test-FeatureBranch -Branch $paths.CURRENT_BRANCH -HasGit:$paths.HAS_GIT)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 62,
+        "ColumnNumber": 87,
+        "Offset": 0,
+        "Line": "if (-not (Test-FeatureBranch -Branch $paths.CURRENT_BRANCH -HasGit:$paths.HAS_GIT)) { "
+      },
+      "StartLineNumber": 62,
+      "StartColumnNumber": 86,
+      "EndLineNumber": 62,
+      "EndColumnNumber": 87,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 62,
+        "StartColumnNumber": 86,
+        "EndLineNumber": 62,
+        "EndColumnNumber": 87,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 62,
+          "Column": 86
+        },
+        "End": {
+          "Line": 62,
+          "Column": 87
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 62,
+    "Column": 86
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 63,
+        "ColumnNumber": 11,
+        "Offset": 0,
+        "Line": "    exit 1 "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 63,
+        "ColumnNumber": 12,
+        "Offset": 0,
+        "Line": "    exit 1 "
+      },
+      "StartLineNumber": 63,
+      "StartColumnNumber": 11,
+      "EndLineNumber": 63,
+      "EndColumnNumber": 12,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 63,
+        "StartColumnNumber": 11,
+        "EndLineNumber": 63,
+        "EndColumnNumber": 12,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 63,
+          "Column": 11
+        },
+        "End": {
+          "Line": 63,
+          "Column": 12
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 63,
+    "Column": 11
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 116,
+        "ColumnNumber": 143,
+        "Offset": 0,
+        "Line": "if ((Test-Path $paths.CONTRACTS_DIR) -and (Get-ChildItem -Path $paths.CONTRACTS_DIR -ErrorAction SilentlyContinue | Select-Object -First 1)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 116,
+        "ColumnNumber": 144,
+        "Offset": 0,
+        "Line": "if ((Test-Path $paths.CONTRACTS_DIR) -and (Get-ChildItem -Path $paths.CONTRACTS_DIR -ErrorAction SilentlyContinue | Select-Object -First 1)) { "
+      },
+      "StartLineNumber": 116,
+      "StartColumnNumber": 143,
+      "EndLineNumber": 116,
+      "EndColumnNumber": 144,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 116,
+        "StartColumnNumber": 143,
+        "EndLineNumber": 116,
+        "EndColumnNumber": 144,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 116,
+          "Column": 143
+        },
+        "End": {
+          "Line": 116,
+          "Column": 144
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 116,
+    "Column": 143
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 117,
+        "ColumnNumber": 26,
+        "Offset": 0,
+        "Line": "    $docs += 'contracts/' "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 117,
+        "ColumnNumber": 27,
+        "Offset": 0,
+        "Line": "    $docs += 'contracts/' "
+      },
+      "StartLineNumber": 117,
+      "StartColumnNumber": 26,
+      "EndLineNumber": 117,
+      "EndColumnNumber": 27,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 117,
+        "StartColumnNumber": 26,
+        "EndLineNumber": 117,
+        "EndColumnNumber": 27,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 117,
+          "Column": 26
+        },
+        "End": {
+          "Line": 117,
+          "Column": 27
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 117,
+    "Column": 26
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 123,
+        "ColumnNumber": 51,
+        "Offset": 0,
+        "Line": "if ($IncludeTasks -and (Test-Path $paths.TASKS)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 123,
+        "ColumnNumber": 52,
+        "Offset": 0,
+        "Line": "if ($IncludeTasks -and (Test-Path $paths.TASKS)) { "
+      },
+      "StartLineNumber": 123,
+      "StartColumnNumber": 51,
+      "EndLineNumber": 123,
+      "EndColumnNumber": 52,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 123,
+        "StartColumnNumber": 51,
+        "EndLineNumber": 123,
+        "EndColumnNumber": 52,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 123,
+          "Column": 51
+        },
+        "End": {
+          "Line": 123,
+          "Column": 52
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 123,
+    "Column": 51
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 124,
+        "ColumnNumber": 24,
+        "Offset": 0,
+        "Line": "    $docs += 'tasks.md' "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 124,
+        "ColumnNumber": 25,
+        "Offset": 0,
+        "Line": "    $docs += 'tasks.md' "
+      },
+      "StartLineNumber": 124,
+      "StartColumnNumber": 24,
+      "EndLineNumber": 124,
+      "EndColumnNumber": 25,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 124,
+        "StartColumnNumber": 24,
+        "EndLineNumber": 124,
+        "EndColumnNumber": 25,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 124,
+          "Column": 24
+        },
+        "End": {
+          "Line": 124,
+          "Column": 25
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 124,
+    "Column": 24
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 130,
+        "ColumnNumber": 23,
+        "Offset": 0,
+        "Line": "    [PSCustomObject]@{ "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 130,
+        "ColumnNumber": 24,
+        "Offset": 0,
+        "Line": "    [PSCustomObject]@{ "
+      },
+      "StartLineNumber": 130,
+      "StartColumnNumber": 23,
+      "EndLineNumber": 130,
+      "EndColumnNumber": 24,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 130,
+        "StartColumnNumber": 23,
+        "EndLineNumber": 130,
+        "EndColumnNumber": 24,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 130,
+          "Column": 23
+        },
+        "End": {
+          "Line": 130,
+          "Column": 24
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 130,
+    "Column": 23
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 132,
+        "ColumnNumber": 31,
+        "Offset": 0,
+        "Line": "        AVAILABLE_DOCS = $docs "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 132,
+        "ColumnNumber": 32,
+        "Offset": 0,
+        "Line": "        AVAILABLE_DOCS = $docs "
+      },
+      "StartLineNumber": 132,
+      "StartColumnNumber": 31,
+      "EndLineNumber": 132,
+      "EndColumnNumber": 32,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 132,
+        "StartColumnNumber": 31,
+        "EndLineNumber": 132,
+        "EndColumnNumber": 32,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 132,
+          "Column": 31
+        },
+        "End": {
+          "Line": 132,
+          "Column": 32
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 132,
+    "Column": 31
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 138,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 138,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 138,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 138,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 138,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 138,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 138,
+          "Column": 1
+        },
+        "End": {
+          "Line": 138,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 138,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 144,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "LineNumber": 144,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 144,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 144,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "check-prerequisites.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\check-prerequisites.ps1",
+        "Description": null,
+        "StartLineNumber": 144,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 144,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 144,
+          "Column": 1
+        },
+        "End": {
+          "Line": 144,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 144,
+    "Column": 1
+  },
+  {
+    "Message": "Empty catch block is used. Please use Write-Error or throw statements in catch blocks.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 10,
+        "ColumnNumber": 7,
+        "Line": "    } catch {\n",
+        "Offset": 242
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 12,
+        "ColumnNumber": 6,
+        "Line": "    }\n",
+        "Offset": 284
+      },
+      "StartLineNumber": 10,
+      "StartColumnNumber": 7,
+      "EndLineNumber": 12,
+      "EndColumnNumber": 6,
+      "Text": "catch {\n        # Git command failed\n    }",
+      "StartOffset": 242,
+      "EndOffset": 284
+    },
+    "RuleName": "PSAvoidUsingEmptyCatchBlock",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 10,
+    "Column": 7
+  },
+  {
+    "Message": "Empty catch block is used. Please use Write-Error or throw statements in catch blocks.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 30,
+        "ColumnNumber": 7,
+        "Line": "    } catch {\n",
+        "Offset": 767
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 32,
+        "ColumnNumber": 6,
+        "Line": "    }\n",
+        "Offset": 809
+      },
+      "StartLineNumber": 30,
+      "StartColumnNumber": 7,
+      "EndLineNumber": 32,
+      "EndColumnNumber": 6,
+      "Text": "catch {\n        # Git command failed\n    }",
+      "StartOffset": 767,
+      "EndOffset": 809
+    },
+    "RuleName": "PSAvoidUsingEmptyCatchBlock",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 30,
+    "Column": 7
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 13,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 13,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 13,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 13,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 13,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 13,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 13,
+          "Column": 1
+        },
+        "End": {
+          "Line": 13,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 13,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 23,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 23,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 23,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 23,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 23,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 23,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 23,
+          "Column": 1
+        },
+        "End": {
+          "Line": 23,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 23,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 33,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 33,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 33,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 33,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 33,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 33,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 33,
+          "Column": 1
+        },
+        "End": {
+          "Line": 33,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 33,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 37,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 37,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 37,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 37,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 37,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 37,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 37,
+          "Column": 1
+        },
+        "End": {
+          "Line": 37,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 37,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 41,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "        "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 41,
+        "ColumnNumber": 9,
+        "Offset": 0,
+        "Line": "        "
+      },
+      "StartLineNumber": 41,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 41,
+      "EndColumnNumber": 9,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "        "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 41,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 41,
+        "EndColumnNumber": 9,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 41,
+          "Column": 1
+        },
+        "End": {
+          "Line": 41,
+          "Column": 9
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 41,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 51,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "        "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 51,
+        "ColumnNumber": 9,
+        "Offset": 0,
+        "Line": "        "
+      },
+      "StartLineNumber": 51,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 51,
+      "EndColumnNumber": 9,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "        "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 51,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 51,
+        "EndColumnNumber": 9,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 51,
+          "Column": 1
+        },
+        "End": {
+          "Line": 51,
+          "Column": 9
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 51,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 56,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 56,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 56,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 56,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 56,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 56,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 56,
+          "Column": 1
+        },
+        "End": {
+          "Line": 56,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 56,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 75,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 75,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 75,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 75,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 75,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 75,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 75,
+          "Column": 1
+        },
+        "End": {
+          "Line": 75,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 75,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 81,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 81,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 81,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 81,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 81,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 81,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 81,
+          "Column": 1
+        },
+        "End": {
+          "Line": 81,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 81,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 100,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 100,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 100,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 100,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": null,
+        "StartLineNumber": 100,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 100,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 100,
+          "Column": 1
+        },
+        "End": {
+          "Line": 100,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 100,
+    "Column": 1
+  },
+  {
+    "Message": "Missing BOM encoding for non-ASCII encoded file 'common.ps1'",
+    "Extent": null,
+    "RuleName": "PSUseBOMForUnicodeEncodedFile",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": null,
+    "Column": null
+  },
+  {
+    "Message": "The variable 'latestFeature' is assigned but never used.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 47,
+        "ColumnNumber": 21,
+        "Line": "                    $latestFeature = $_.Name\n",
+        "Offset": 1299
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 47,
+        "ColumnNumber": 35,
+        "Line": "                    $latestFeature = $_.Name\n",
+        "Offset": 1313
+      },
+      "StartLineNumber": 47,
+      "StartColumnNumber": 21,
+      "EndLineNumber": 47,
+      "EndColumnNumber": 35,
+      "Text": "$latestFeature",
+      "StartOffset": 1299,
+      "EndOffset": 1313
+    },
+    "RuleName": "PSUseDeclaredVarsMoreThanAssignments",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": "latestFeature",
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 47,
+    "Column": 21
+  },
+  {
+    "Message": "The cmdlet 'Test-FileExists' uses a plural noun. A singular noun should be used instead.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 116,
+        "ColumnNumber": 10,
+        "Line": "function Test-FileExists {\n",
+        "Offset": 3179
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 116,
+        "ColumnNumber": 25,
+        "Line": "function Test-FileExists {\n",
+        "Offset": 3194
+      },
+      "StartLineNumber": 116,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 116,
+      "EndColumnNumber": 25,
+      "Text": "Test-FileExists",
+      "StartOffset": 3179,
+      "EndOffset": 3194
+    },
+    "RuleName": "PSUseSingularNouns",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": "Test-FileExists",
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": "Singularized correction of 'Test-FileExists'",
+        "StartLineNumber": 116,
+        "StartColumnNumber": 10,
+        "EndLineNumber": 116,
+        "EndColumnNumber": 25,
+        "Text": "Test-FileExist",
+        "Lines": [
+          "Test-FileExist"
+        ],
+        "Start": {
+          "Line": 116,
+          "Column": 10
+        },
+        "End": {
+          "Line": 116,
+          "Column": 25
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 116,
+    "Column": 10
+  },
+  {
+    "Message": "The cmdlet 'Test-DirHasFiles' uses a plural noun. A singular noun should be used instead.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 127,
+        "ColumnNumber": 10,
+        "Line": "function Test-DirHasFiles {\n",
+        "Offset": 3446
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "LineNumber": 127,
+        "ColumnNumber": 26,
+        "Line": "function Test-DirHasFiles {\n",
+        "Offset": 3462
+      },
+      "StartLineNumber": 127,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 127,
+      "EndColumnNumber": 26,
+      "Text": "Test-DirHasFiles",
+      "StartOffset": 3446,
+      "EndOffset": 3462
+    },
+    "RuleName": "PSUseSingularNouns",
+    "Severity": 1,
+    "ScriptName": "common.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+    "RuleSuppressionID": "Test-DirHasFiles",
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\common.ps1",
+        "Description": "Singularized correction of 'Test-DirHasFiles'",
+        "StartLineNumber": 127,
+        "StartColumnNumber": 10,
+        "EndLineNumber": 127,
+        "EndColumnNumber": 26,
+        "Text": "Test-DirHasFile",
+        "Lines": [
+          "Test-DirHasFile"
+        ],
+        "Start": {
+          "Line": 127,
+          "Column": 10
+        },
+        "End": {
+          "Line": 127,
+          "Column": 26
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 127,
+    "Column": 10
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 94,
+        "ColumnNumber": 27,
+        "Offset": 0,
+        "Line": "if (Test-Path $template) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 94,
+        "ColumnNumber": 28,
+        "Offset": 0,
+        "Line": "if (Test-Path $template) { "
+      },
+      "StartLineNumber": 94,
+      "StartColumnNumber": 27,
+      "EndLineNumber": 94,
+      "EndColumnNumber": 28,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "create-new-feature.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "Description": null,
+        "StartLineNumber": 94,
+        "StartColumnNumber": 27,
+        "EndLineNumber": 94,
+        "EndColumnNumber": 28,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 94,
+          "Column": 27
+        },
+        "End": {
+          "Line": 94,
+          "Column": 28
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 94,
+    "Column": 27
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 41,
+        "Offset": 0,
+        "Line": "    Copy-Item $template $specFile -Force "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 42,
+        "Offset": 0,
+        "Line": "    Copy-Item $template $specFile -Force "
+      },
+      "StartLineNumber": 95,
+      "StartColumnNumber": 41,
+      "EndLineNumber": 95,
+      "EndColumnNumber": 42,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "create-new-feature.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "Description": null,
+        "StartLineNumber": 95,
+        "StartColumnNumber": 41,
+        "EndLineNumber": 95,
+        "EndColumnNumber": 42,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 95,
+          "Column": 41
+        },
+        "End": {
+          "Line": 95,
+          "Column": 42
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 95,
+    "Column": 41
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 96,
+        "ColumnNumber": 9,
+        "Offset": 0,
+        "Line": "} else { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 96,
+        "ColumnNumber": 10,
+        "Offset": 0,
+        "Line": "} else { "
+      },
+      "StartLineNumber": 96,
+      "StartColumnNumber": 9,
+      "EndLineNumber": 96,
+      "EndColumnNumber": 10,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "create-new-feature.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "Description": null,
+        "StartLineNumber": 96,
+        "StartColumnNumber": 9,
+        "EndLineNumber": 96,
+        "EndColumnNumber": 10,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 96,
+          "Column": 9
+        },
+        "End": {
+          "Line": 96,
+          "Column": 10
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 96,
+    "Column": 9
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 97,
+        "ColumnNumber": 55,
+        "Offset": 0,
+        "Line": "    New-Item -ItemType File -Path $specFile | Out-Null "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 97,
+        "ColumnNumber": 56,
+        "Offset": 0,
+        "Line": "    New-Item -ItemType File -Path $specFile | Out-Null "
+      },
+      "StartLineNumber": 97,
+      "StartColumnNumber": 55,
+      "EndLineNumber": 97,
+      "EndColumnNumber": 56,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "create-new-feature.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "Description": null,
+        "StartLineNumber": 97,
+        "StartColumnNumber": 55,
+        "EndLineNumber": 97,
+        "EndColumnNumber": 56,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 97,
+          "Column": 55
+        },
+        "End": {
+          "Line": 97,
+          "Column": 56
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 97,
+    "Column": 55
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 104,
+        "ColumnNumber": 30,
+        "Offset": 0,
+        "Line": "    $obj = [PSCustomObject]@{ "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "LineNumber": 104,
+        "ColumnNumber": 31,
+        "Offset": 0,
+        "Line": "    $obj = [PSCustomObject]@{ "
+      },
+      "StartLineNumber": 104,
+      "StartColumnNumber": 30,
+      "EndLineNumber": 104,
+      "EndColumnNumber": 31,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "create-new-feature.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\create-new-feature.ps1",
+        "Description": null,
+        "StartLineNumber": 104,
+        "StartColumnNumber": 30,
+        "EndLineNumber": 104,
+        "EndColumnNumber": 31,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 104,
+          "Column": 30
+        },
+        "End": {
+          "Line": 104,
+          "Column": 31
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 104,
+    "Column": 30
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 27,
+        "ColumnNumber": 86,
+        "Offset": 0,
+        "Line": "if (-not (Test-FeatureBranch -Branch $paths.CURRENT_BRANCH -HasGit $paths.HAS_GIT)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 27,
+        "ColumnNumber": 87,
+        "Offset": 0,
+        "Line": "if (-not (Test-FeatureBranch -Branch $paths.CURRENT_BRANCH -HasGit $paths.HAS_GIT)) { "
+      },
+      "StartLineNumber": 27,
+      "StartColumnNumber": 86,
+      "EndLineNumber": 27,
+      "EndColumnNumber": 87,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "setup-plan.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "Description": null,
+        "StartLineNumber": 27,
+        "StartColumnNumber": 86,
+        "EndLineNumber": 27,
+        "EndColumnNumber": 87,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 27,
+          "Column": 86
+        },
+        "End": {
+          "Line": 27,
+          "Column": 87
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 27,
+    "Column": 86
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 28,
+        "ColumnNumber": 11,
+        "Offset": 0,
+        "Line": "    exit 1 "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 28,
+        "ColumnNumber": 12,
+        "Offset": 0,
+        "Line": "    exit 1 "
+      },
+      "StartLineNumber": 28,
+      "StartColumnNumber": 11,
+      "EndLineNumber": 28,
+      "EndColumnNumber": 12,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "setup-plan.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "Description": null,
+        "StartLineNumber": 28,
+        "StartColumnNumber": 11,
+        "EndLineNumber": 28,
+        "EndColumnNumber": 12,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 28,
+          "Column": 11
+        },
+        "End": {
+          "Line": 28,
+          "Column": 12
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 28,
+    "Column": 11
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 36,
+        "ColumnNumber": 27,
+        "Offset": 0,
+        "Line": "if (Test-Path $template) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 36,
+        "ColumnNumber": 28,
+        "Offset": 0,
+        "Line": "if (Test-Path $template) { "
+      },
+      "StartLineNumber": 36,
+      "StartColumnNumber": 27,
+      "EndLineNumber": 36,
+      "EndColumnNumber": 28,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "setup-plan.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "Description": null,
+        "StartLineNumber": 36,
+        "StartColumnNumber": 27,
+        "EndLineNumber": 36,
+        "EndColumnNumber": 28,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 36,
+          "Column": 27
+        },
+        "End": {
+          "Line": 36,
+          "Column": 28
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 36,
+    "Column": 27
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 47,
+        "ColumnNumber": 33,
+        "Offset": 0,
+        "Line": "    $result = [PSCustomObject]@{ "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "LineNumber": 47,
+        "ColumnNumber": 34,
+        "Offset": 0,
+        "Line": "    $result = [PSCustomObject]@{ "
+      },
+      "StartLineNumber": 47,
+      "StartColumnNumber": 33,
+      "EndLineNumber": 47,
+      "EndColumnNumber": 34,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "setup-plan.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\setup-plan.ps1",
+        "Description": null,
+        "StartLineNumber": 47,
+        "StartColumnNumber": 33,
+        "EndLineNumber": 47,
+        "EndColumnNumber": 34,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 47,
+          "Column": 33
+        },
+        "End": {
+          "Line": 47,
+          "Column": 34
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 47,
+    "Column": 33
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 66,
+        "ColumnNumber": 22,
+        "Offset": 0,
+        "Line": "function Write-Info { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 66,
+        "ColumnNumber": 23,
+        "Offset": 0,
+        "Line": "function Write-Info { "
+      },
+      "StartLineNumber": 66,
+      "StartColumnNumber": 22,
+      "EndLineNumber": 66,
+      "EndColumnNumber": 23,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 66,
+        "StartColumnNumber": 22,
+        "EndLineNumber": 66,
+        "EndColumnNumber": 23,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 66,
+          "Column": 22
+        },
+        "End": {
+          "Line": 66,
+          "Column": 23
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 66,
+    "Column": 22
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 71,
+        "ColumnNumber": 32,
+        "Offset": 0,
+        "Line": "    Write-Host \"INFO: $Message\" "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 71,
+        "ColumnNumber": 33,
+        "Offset": 0,
+        "Line": "    Write-Host \"INFO: $Message\" "
+      },
+      "StartLineNumber": 71,
+      "StartColumnNumber": 32,
+      "EndLineNumber": 71,
+      "EndColumnNumber": 33,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 71,
+        "StartColumnNumber": 32,
+        "EndLineNumber": 71,
+        "EndColumnNumber": 33,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 71,
+          "Column": 32
+        },
+        "End": {
+          "Line": 71,
+          "Column": 33
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 71,
+    "Column": 32
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 74,
+        "ColumnNumber": 25,
+        "Offset": 0,
+        "Line": "function Write-Success { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 74,
+        "ColumnNumber": 26,
+        "Offset": 0,
+        "Line": "function Write-Success { "
+      },
+      "StartLineNumber": 74,
+      "StartColumnNumber": 25,
+      "EndLineNumber": 74,
+      "EndColumnNumber": 26,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 74,
+        "StartColumnNumber": 25,
+        "EndLineNumber": 74,
+        "EndColumnNumber": 26,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 74,
+          "Column": 25
+        },
+        "End": {
+          "Line": 74,
+          "Column": 26
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 74,
+    "Column": 25
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 79,
+        "ColumnNumber": 42,
+        "Offset": 0,
+        "Line": "    Write-Host \"$([char]0x2713) $Message\" "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 79,
+        "ColumnNumber": 43,
+        "Offset": 0,
+        "Line": "    Write-Host \"$([char]0x2713) $Message\" "
+      },
+      "StartLineNumber": 79,
+      "StartColumnNumber": 42,
+      "EndLineNumber": 79,
+      "EndColumnNumber": 43,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 79,
+        "StartColumnNumber": 42,
+        "EndLineNumber": 79,
+        "EndColumnNumber": 43,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 79,
+          "Column": 42
+        },
+        "End": {
+          "Line": 79,
+          "Column": 43
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 79,
+    "Column": 42
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 82,
+        "ColumnNumber": 28,
+        "Offset": 0,
+        "Line": "function Write-WarningMsg { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 82,
+        "ColumnNumber": 29,
+        "Offset": 0,
+        "Line": "function Write-WarningMsg { "
+      },
+      "StartLineNumber": 82,
+      "StartColumnNumber": 28,
+      "EndLineNumber": 82,
+      "EndColumnNumber": 29,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 82,
+        "StartColumnNumber": 28,
+        "EndLineNumber": 82,
+        "EndColumnNumber": 29,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 82,
+          "Column": 28
+        },
+        "End": {
+          "Line": 82,
+          "Column": 29
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 82,
+    "Column": 28
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 87,
+        "ColumnNumber": 27,
+        "Offset": 0,
+        "Line": "    Write-Warning $Message "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 87,
+        "ColumnNumber": 28,
+        "Offset": 0,
+        "Line": "    Write-Warning $Message "
+      },
+      "StartLineNumber": 87,
+      "StartColumnNumber": 27,
+      "EndLineNumber": 87,
+      "EndColumnNumber": 28,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 87,
+        "StartColumnNumber": 27,
+        "EndLineNumber": 87,
+        "EndColumnNumber": 28,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 87,
+          "Column": 27
+        },
+        "End": {
+          "Line": 87,
+          "Column": 28
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 87,
+    "Column": 27
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 90,
+        "ColumnNumber": 21,
+        "Offset": 0,
+        "Line": "function Write-Err { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 90,
+        "ColumnNumber": 22,
+        "Offset": 0,
+        "Line": "function Write-Err { "
+      },
+      "StartLineNumber": 90,
+      "StartColumnNumber": 21,
+      "EndLineNumber": 90,
+      "EndColumnNumber": 22,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 90,
+        "StartColumnNumber": 21,
+        "EndLineNumber": 90,
+        "EndColumnNumber": 22,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 90,
+          "Column": 21
+        },
+        "End": {
+          "Line": 90,
+          "Column": 22
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 90,
+    "Column": 21
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 54,
+        "Offset": 0,
+        "Line": "    Write-Host \"ERROR: $Message\" -ForegroundColor Red "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 55,
+        "Offset": 0,
+        "Line": "    Write-Host \"ERROR: $Message\" -ForegroundColor Red "
+      },
+      "StartLineNumber": 95,
+      "StartColumnNumber": 54,
+      "EndLineNumber": 95,
+      "EndColumnNumber": 55,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 95,
+        "StartColumnNumber": 54,
+        "EndLineNumber": 95,
+        "EndColumnNumber": 55,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 95,
+          "Column": 54
+        },
+        "End": {
+          "Line": 95,
+          "Column": 55
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 95,
+    "Column": 54
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 128,
+        "ColumnNumber": 32,
+        "Offset": 0,
+        "Line": "        if ($_ -match $regex) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 128,
+        "ColumnNumber": 33,
+        "Offset": 0,
+        "Line": "        if ($_ -match $regex) { "
+      },
+      "StartLineNumber": 128,
+      "StartColumnNumber": 32,
+      "EndLineNumber": 128,
+      "EndColumnNumber": 33,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 128,
+        "StartColumnNumber": 32,
+        "EndLineNumber": 128,
+        "EndColumnNumber": 33,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 128,
+          "Column": 32
+        },
+        "End": {
+          "Line": 128,
+          "Column": 33
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 128,
+    "Column": 32
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 168,
+        "ColumnNumber": 32,
+        "Offset": 0,
+        "Line": "function Get-ProjectStructure { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 168,
+        "ColumnNumber": 33,
+        "Offset": 0,
+        "Line": "function Get-ProjectStructure { "
+      },
+      "StartLineNumber": 168,
+      "StartColumnNumber": 32,
+      "EndLineNumber": 168,
+      "EndColumnNumber": 33,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 168,
+        "StartColumnNumber": 32,
+        "EndLineNumber": 168,
+        "EndColumnNumber": 33,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 168,
+          "Column": 32
+        },
+        "End": {
+          "Line": 168,
+          "Column": 33
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 168,
+    "Column": 32
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 173,
+        "ColumnNumber": 107,
+        "Offset": 0,
+        "Line": "    if ($ProjectType -match 'web') { return \"backend/`nfrontend/`ntests/\" } else { return \"src/`ntests/\" } "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 173,
+        "ColumnNumber": 108,
+        "Offset": 0,
+        "Line": "    if ($ProjectType -match 'web') { return \"backend/`nfrontend/`ntests/\" } else { return \"src/`ntests/\" } "
+      },
+      "StartLineNumber": 173,
+      "StartColumnNumber": 107,
+      "EndLineNumber": 173,
+      "EndColumnNumber": 108,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 173,
+        "StartColumnNumber": 107,
+        "EndLineNumber": 173,
+        "EndColumnNumber": 108,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 173,
+          "Column": 107
+        },
+        "End": {
+          "Line": 173,
+          "Column": 108
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 173,
+    "Column": 107
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 176,
+        "ColumnNumber": 35,
+        "Offset": 0,
+        "Line": "function Get-CommandsForLanguage { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 176,
+        "ColumnNumber": 36,
+        "Offset": 0,
+        "Line": "function Get-CommandsForLanguage { "
+      },
+      "StartLineNumber": 176,
+      "StartColumnNumber": 35,
+      "EndLineNumber": 176,
+      "EndColumnNumber": 36,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 176,
+        "StartColumnNumber": 35,
+        "EndLineNumber": 176,
+        "EndColumnNumber": 36,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 176,
+          "Column": 35
+        },
+        "End": {
+          "Line": 176,
+          "Column": 36
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 176,
+    "Column": 35
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 189,
+        "ColumnNumber": 35,
+        "Offset": 0,
+        "Line": "function Get-LanguageConventions { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 189,
+        "ColumnNumber": 36,
+        "Offset": 0,
+        "Line": "function Get-LanguageConventions { "
+      },
+      "StartLineNumber": 189,
+      "StartColumnNumber": 35,
+      "EndLineNumber": 189,
+      "EndColumnNumber": 36,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 189,
+        "StartColumnNumber": 35,
+        "EndLineNumber": 189,
+        "EndColumnNumber": 36,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 189,
+          "Column": 35
+        },
+        "End": {
+          "Line": 189,
+          "Column": 36
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 189,
+    "Column": 35
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 194,
+        "ColumnNumber": 106,
+        "Offset": 0,
+        "Line": "    if ($Lang) { \"${Lang}: Follow standard conventions\" } else { 'General: Follow standard conventions' } "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 194,
+        "ColumnNumber": 107,
+        "Offset": 0,
+        "Line": "    if ($Lang) { \"${Lang}: Follow standard conventions\" } else { 'General: Follow standard conventions' } "
+      },
+      "StartLineNumber": 194,
+      "StartColumnNumber": 106,
+      "EndLineNumber": 194,
+      "EndColumnNumber": 107,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 194,
+        "StartColumnNumber": 106,
+        "EndLineNumber": 194,
+        "EndColumnNumber": 107,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 194,
+          "Column": 106
+        },
+        "End": {
+          "Line": 194,
+          "Column": 107
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 194,
+    "Column": 106
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 221,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 221,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 221,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 221,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 221,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 221,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 221,
+          "Column": 1
+        },
+        "End": {
+          "Line": 221,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 221,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 231,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 231,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 231,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 231,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 231,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 231,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 231,
+          "Column": 1
+        },
+        "End": {
+          "Line": 231,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 231,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 239,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 239,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 239,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 239,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 239,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 239,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 239,
+          "Column": 1
+        },
+        "End": {
+          "Line": 239,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 239,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 249,
+        "ColumnNumber": 1,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 249,
+        "ColumnNumber": 5,
+        "Offset": 0,
+        "Line": "    "
+      },
+      "StartLineNumber": 249,
+      "StartColumnNumber": 1,
+      "EndLineNumber": 249,
+      "EndColumnNumber": 5,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": "    "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 249,
+        "StartColumnNumber": 1,
+        "EndLineNumber": 249,
+        "EndColumnNumber": 5,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 249,
+          "Column": 1
+        },
+        "End": {
+          "Line": 249,
+          "Column": 5
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 249,
+    "Column": 1
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 274,
+        "ColumnNumber": 88,
+        "Offset": 0,
+        "Line": "        if (-not (Select-String -Pattern $escapedTechStack -Path $TargetFile -Quiet)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 274,
+        "ColumnNumber": 89,
+        "Offset": 0,
+        "Line": "        if (-not (Select-String -Pattern $escapedTechStack -Path $TargetFile -Quiet)) { "
+      },
+      "StartLineNumber": 274,
+      "StartColumnNumber": 88,
+      "EndLineNumber": 274,
+      "EndColumnNumber": 89,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 274,
+        "StartColumnNumber": 88,
+        "EndLineNumber": 274,
+        "EndColumnNumber": 89,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 274,
+          "Column": 88
+        },
+        "End": {
+          "Line": 274,
+          "Column": 89
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 274,
+    "Column": 88
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 275,
+        "ColumnNumber": 64,
+        "Offset": 0,
+        "Line": "            $newTechEntries += \"- $techStack ($CURRENT_BRANCH)\" "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 275,
+        "ColumnNumber": 65,
+        "Offset": 0,
+        "Line": "            $newTechEntries += \"- $techStack ($CURRENT_BRANCH)\" "
+      },
+      "StartLineNumber": 275,
+      "StartColumnNumber": 64,
+      "EndLineNumber": 275,
+      "EndColumnNumber": 65,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 275,
+        "StartColumnNumber": 64,
+        "EndLineNumber": 275,
+        "EndColumnNumber": 65,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 275,
+          "Column": 64
+        },
+        "End": {
+          "Line": 275,
+          "Column": 65
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 275,
+    "Column": 64
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 280,
+        "ColumnNumber": 81,
+        "Offset": 0,
+        "Line": "        if (-not (Select-String -Pattern $escapedDB -Path $TargetFile -Quiet)) { "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 280,
+        "ColumnNumber": 82,
+        "Offset": 0,
+        "Line": "        if (-not (Select-String -Pattern $escapedDB -Path $TargetFile -Quiet)) { "
+      },
+      "StartLineNumber": 280,
+      "StartColumnNumber": 81,
+      "EndLineNumber": 280,
+      "EndColumnNumber": 82,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 280,
+        "StartColumnNumber": 81,
+        "EndLineNumber": 280,
+        "EndColumnNumber": 82,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 280,
+          "Column": 81
+        },
+        "End": {
+          "Line": 280,
+          "Column": 82
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 280,
+    "Column": 81
+  },
+  {
+    "Message": "Line has trailing whitespace",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 281,
+        "ColumnNumber": 61,
+        "Offset": 0,
+        "Line": "            $newTechEntries += \"- $NEW_DB ($CURRENT_BRANCH)\" "
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 281,
+        "ColumnNumber": 62,
+        "Offset": 0,
+        "Line": "            $newTechEntries += \"- $NEW_DB ($CURRENT_BRANCH)\" "
+      },
+      "StartLineNumber": 281,
+      "StartColumnNumber": 61,
+      "EndLineNumber": 281,
+      "EndColumnNumber": 62,
+      "StartOffset": 0,
+      "EndOffset": 0,
+      "Text": " "
+    },
+    "RuleName": "PSAvoidTrailingWhitespace",
+    "Severity": 0,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": null,
+        "StartLineNumber": 281,
+        "StartColumnNumber": 61,
+        "EndLineNumber": 281,
+        "EndColumnNumber": 62,
+        "Text": "",
+        "Lines": [
+          ""
+        ],
+        "Start": {
+          "Line": 281,
+          "Column": 61
+        },
+        "End": {
+          "Line": 281,
+          "Column": 62
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 281,
+    "Column": 61
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 71,
+        "ColumnNumber": 5,
+        "Line": "    Write-Host \"INFO: $Message\" \n",
+        "Offset": 2353
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 71,
+        "ColumnNumber": 32,
+        "Line": "    Write-Host \"INFO: $Message\" \n",
+        "Offset": 2380
+      },
+      "StartLineNumber": 71,
+      "StartColumnNumber": 5,
+      "EndLineNumber": 71,
+      "EndColumnNumber": 32,
+      "Text": "Write-Host \"INFO: $Message\"",
+      "StartOffset": 2353,
+      "EndOffset": 2380
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 71,
+    "Column": 5
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 79,
+        "ColumnNumber": 5,
+        "Line": "    Write-Host \"$([char]0x2713) $Message\" \n",
+        "Offset": 2494
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 79,
+        "ColumnNumber": 42,
+        "Line": "    Write-Host \"$([char]0x2713) $Message\" \n",
+        "Offset": 2531
+      },
+      "StartLineNumber": 79,
+      "StartColumnNumber": 5,
+      "EndLineNumber": 79,
+      "EndColumnNumber": 42,
+      "Text": "Write-Host \"$([char]0x2713) $Message\"",
+      "StartOffset": 2494,
+      "EndOffset": 2531
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 79,
+    "Column": 5
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 5,
+        "Line": "    Write-Host \"ERROR: $Message\" -ForegroundColor Red \n",
+        "Offset": 2780
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 95,
+        "ColumnNumber": 54,
+        "Line": "    Write-Host \"ERROR: $Message\" -ForegroundColor Red \n",
+        "Offset": 2829
+      },
+      "StartLineNumber": 95,
+      "StartColumnNumber": 5,
+      "EndLineNumber": 95,
+      "EndColumnNumber": 54,
+      "Text": "Write-Host \"ERROR: $Message\" -ForegroundColor Red",
+      "StartOffset": 2780,
+      "EndOffset": 2829
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 95,
+    "Column": 5
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 404,
+        "ColumnNumber": 5,
+        "Line": "    Write-Host ''\n",
+        "Offset": 17174
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 404,
+        "ColumnNumber": 18,
+        "Line": "    Write-Host ''\n",
+        "Offset": 17187
+      },
+      "StartLineNumber": 404,
+      "StartColumnNumber": 5,
+      "EndLineNumber": 404,
+      "EndColumnNumber": 18,
+      "Text": "Write-Host ''",
+      "StartOffset": 17174,
+      "EndOffset": 17187
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 404,
+    "Column": 5
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 406,
+        "ColumnNumber": 22,
+        "Line": "    if ($NEW_LANG) { Write-Host \"  - Added language: $NEW_LANG\" }\n",
+        "Offset": 17246
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 406,
+        "ColumnNumber": 64,
+        "Line": "    if ($NEW_LANG) { Write-Host \"  - Added language: $NEW_LANG\" }\n",
+        "Offset": 17288
+      },
+      "StartLineNumber": 406,
+      "StartColumnNumber": 22,
+      "EndLineNumber": 406,
+      "EndColumnNumber": 64,
+      "Text": "Write-Host \"  - Added language: $NEW_LANG\"",
+      "StartOffset": 17246,
+      "EndOffset": 17288
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 406,
+    "Column": 22
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 407,
+        "ColumnNumber": 27,
+        "Line": "    if ($NEW_FRAMEWORK) { Write-Host \"  - Added framework: $NEW_FRAMEWORK\" }\n",
+        "Offset": 17317
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 407,
+        "ColumnNumber": 75,
+        "Line": "    if ($NEW_FRAMEWORK) { Write-Host \"  - Added framework: $NEW_FRAMEWORK\" }\n",
+        "Offset": 17365
+      },
+      "StartLineNumber": 407,
+      "StartColumnNumber": 27,
+      "EndLineNumber": 407,
+      "EndColumnNumber": 75,
+      "Text": "Write-Host \"  - Added framework: $NEW_FRAMEWORK\"",
+      "StartOffset": 17317,
+      "EndOffset": 17365
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 407,
+    "Column": 27
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 408,
+        "ColumnNumber": 43,
+        "Line": "    if ($NEW_DB -and $NEW_DB -ne 'N/A') { Write-Host \"  - Added database: $NEW_DB\" }\n",
+        "Offset": 17410
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 408,
+        "ColumnNumber": 83,
+        "Line": "    if ($NEW_DB -and $NEW_DB -ne 'N/A') { Write-Host \"  - Added database: $NEW_DB\" }\n",
+        "Offset": 17450
+      },
+      "StartLineNumber": 408,
+      "StartColumnNumber": 43,
+      "EndLineNumber": 408,
+      "EndColumnNumber": 83,
+      "Text": "Write-Host \"  - Added database: $NEW_DB\"",
+      "StartOffset": 17410,
+      "EndOffset": 17450
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 408,
+    "Column": 43
+  },
+  {
+    "Message": "File 'update-agent-context.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 409,
+        "ColumnNumber": 5,
+        "Line": "    Write-Host ''\n",
+        "Offset": 17457
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 409,
+        "ColumnNumber": 18,
+        "Line": "    Write-Host ''\n",
+        "Offset": 17470
+      },
+      "StartLineNumber": 409,
+      "StartColumnNumber": 5,
+      "EndLineNumber": 409,
+      "EndColumnNumber": 18,
+      "Text": "Write-Host ''",
+      "StartOffset": 17457,
+      "EndOffset": 17470
+    },
+    "RuleName": "PSAvoidUsingWriteHost",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 409,
+    "Column": 5
+  },
+  {
+    "Message": "The cmdlet 'Validate-Environment' uses an unapproved verb.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 98,
+        "ColumnNumber": 10,
+        "Line": "function Validate-Environment {\n",
+        "Offset": 2843
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 98,
+        "ColumnNumber": 30,
+        "Line": "function Validate-Environment {\n",
+        "Offset": 2863
+      },
+      "StartLineNumber": 98,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 98,
+      "EndColumnNumber": 30,
+      "Text": "Validate-Environment",
+      "StartOffset": 2843,
+      "EndOffset": 2863
+    },
+    "RuleName": "PSUseApprovedVerbs",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 98,
+    "Column": 10
+  },
+  {
+    "Message": "The cmdlet 'Extract-PlanField' uses an unapproved verb.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 117,
+        "ColumnNumber": 10,
+        "Line": "function Extract-PlanField {\n",
+        "Offset": 3705
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 117,
+        "ColumnNumber": 27,
+        "Line": "function Extract-PlanField {\n",
+        "Offset": 3722
+      },
+      "StartLineNumber": 117,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 117,
+      "EndColumnNumber": 27,
+      "Text": "Extract-PlanField",
+      "StartOffset": 3705,
+      "EndOffset": 3722
+    },
+    "RuleName": "PSUseApprovedVerbs",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 117,
+    "Column": 10
+  },
+  {
+    "Message": "The cmdlet 'Parse-PlanData' uses an unapproved verb.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 135,
+        "ColumnNumber": 10,
+        "Line": "function Parse-PlanData {\n",
+        "Offset": 4312
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 135,
+        "ColumnNumber": 24,
+        "Line": "function Parse-PlanData {\n",
+        "Offset": 4326
+      },
+      "StartLineNumber": 135,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 135,
+      "EndColumnNumber": 24,
+      "Text": "Parse-PlanData",
+      "StartOffset": 4312,
+      "EndOffset": 4326
+    },
+    "RuleName": "PSUseApprovedVerbs",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 135,
+    "Column": 10
+  },
+  {
+    "Message": "The cmdlet 'Print-Summary' uses an unapproved verb.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 403,
+        "ColumnNumber": 10,
+        "Line": "function Print-Summary {\n",
+        "Offset": 17154
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 403,
+        "ColumnNumber": 23,
+        "Line": "function Print-Summary {\n",
+        "Offset": 17167
+      },
+      "StartLineNumber": 403,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 403,
+      "EndColumnNumber": 23,
+      "Text": "Print-Summary",
+      "StartOffset": 17154,
+      "EndOffset": 17167
+    },
+    "RuleName": "PSUseApprovedVerbs",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 403,
+    "Column": 10
+  },
+  {
+    "Message": "Function 'New-AgentFile' has verb that could change system state. Therefore, the function has to support 'ShouldProcess'.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 197,
+        "ColumnNumber": 10,
+        "Line": "function New-AgentFile {\n",
+        "Offset": 6617
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 197,
+        "ColumnNumber": 23,
+        "Line": "function New-AgentFile {\n",
+        "Offset": 6630
+      },
+      "StartLineNumber": 197,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 197,
+      "EndColumnNumber": 23,
+      "Text": "New-AgentFile",
+      "StartOffset": 6617,
+      "EndOffset": 6630
+    },
+    "RuleName": "PSUseShouldProcessForStateChangingFunctions",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 197,
+    "Column": 10
+  },
+  {
+    "Message": "Function 'Update-ExistingAgentFile' has verb that could change system state. Therefore, the function has to support 'ShouldProcess'.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 261,
+        "ColumnNumber": 10,
+        "Line": "function Update-ExistingAgentFile {\n",
+        "Offset": 9561
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 261,
+        "ColumnNumber": 34,
+        "Line": "function Update-ExistingAgentFile {\n",
+        "Offset": 9585
+      },
+      "StartLineNumber": 261,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 261,
+      "EndColumnNumber": 34,
+      "Text": "Update-ExistingAgentFile",
+      "StartOffset": 9561,
+      "EndOffset": 9585
+    },
+    "RuleName": "PSUseShouldProcessForStateChangingFunctions",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 261,
+    "Column": 10
+  },
+  {
+    "Message": "Function 'Update-AgentFile' has verb that could change system state. Therefore, the function has to support 'ShouldProcess'.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 334,
+        "ColumnNumber": 10,
+        "Line": "function Update-AgentFile {\n",
+        "Offset": 12818
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 334,
+        "ColumnNumber": 26,
+        "Line": "function Update-AgentFile {\n",
+        "Offset": 12834
+      },
+      "StartLineNumber": 334,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 334,
+      "EndColumnNumber": 26,
+      "Text": "Update-AgentFile",
+      "StartOffset": 12818,
+      "EndOffset": 12834
+    },
+    "RuleName": "PSUseShouldProcessForStateChangingFunctions",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 334,
+    "Column": 10
+  },
+  {
+    "Message": "Function 'Update-SpecificAgent' has verb that could change system state. Therefore, the function has to support 'ShouldProcess'.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 362,
+        "ColumnNumber": 10,
+        "Line": "function Update-SpecificAgent {\n",
+        "Offset": 14024
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 362,
+        "ColumnNumber": 30,
+        "Line": "function Update-SpecificAgent {\n",
+        "Offset": 14044
+      },
+      "StartLineNumber": 362,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 362,
+      "EndColumnNumber": 30,
+      "Text": "Update-SpecificAgent",
+      "StartOffset": 14024,
+      "EndOffset": 14044
+    },
+    "RuleName": "PSUseShouldProcessForStateChangingFunctions",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 362,
+    "Column": 10
+  },
+  {
+    "Message": "Function 'Update-AllExistingAgents' has verb that could change system state. Therefore, the function has to support 'ShouldProcess'.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 383,
+        "ColumnNumber": 10,
+        "Line": "function Update-AllExistingAgents {\n",
+        "Offset": 15334
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 383,
+        "ColumnNumber": 34,
+        "Line": "function Update-AllExistingAgents {\n",
+        "Offset": 15358
+      },
+      "StartLineNumber": 383,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 383,
+      "EndColumnNumber": 34,
+      "Text": "Update-AllExistingAgents",
+      "StartOffset": 15334,
+      "EndOffset": 15358
+    },
+    "RuleName": "PSUseShouldProcessForStateChangingFunctions",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": null,
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 383,
+    "Column": 10
+  },
+  {
+    "Message": "The parameter 'AgentType' has been declared but not used.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 29,
+        "ColumnNumber": 13,
+        "Line": "    [string]$AgentType\n",
+        "Offset": 982
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 29,
+        "ColumnNumber": 23,
+        "Line": "    [string]$AgentType\n",
+        "Offset": 992
+      },
+      "StartLineNumber": 29,
+      "StartColumnNumber": 13,
+      "EndLineNumber": 29,
+      "EndColumnNumber": 23,
+      "Text": "$AgentType",
+      "StartOffset": 982,
+      "EndOffset": 992
+    },
+    "RuleName": "PSReviewUnusedParameter",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": "AgentType",
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 29,
+    "Column": 13
+  },
+  {
+    "Message": "The variable 'changeAdded' is assigned but never used.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 290,
+        "ColumnNumber": 65,
+        "Line": "    $inTech = $false; $inChanges = $false; $techAdded = $false; $changeAdded = $false; $existingChanges = 0\n",
+        "Offset": 10946
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 290,
+        "ColumnNumber": 77,
+        "Line": "    $inTech = $false; $inChanges = $false; $techAdded = $false; $changeAdded = $false; $existingChanges = 0\n",
+        "Offset": 10958
+      },
+      "StartLineNumber": 290,
+      "StartColumnNumber": 65,
+      "EndLineNumber": 290,
+      "EndColumnNumber": 77,
+      "Text": "$changeAdded",
+      "StartOffset": 10946,
+      "EndOffset": 10958
+    },
+    "RuleName": "PSUseDeclaredVarsMoreThanAssignments",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": "changeAdded",
+    "SuggestedCorrections": null,
+    "IsSuppressed": false,
+    "Line": 290,
+    "Column": 65
+  },
+  {
+    "Message": "The cmdlet 'Get-LanguageConventions' uses a plural noun. A singular noun should be used instead.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 189,
+        "ColumnNumber": 10,
+        "Line": "function Get-LanguageConventions { \n",
+        "Offset": 6394
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 189,
+        "ColumnNumber": 33,
+        "Line": "function Get-LanguageConventions { \n",
+        "Offset": 6417
+      },
+      "StartLineNumber": 189,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 189,
+      "EndColumnNumber": 33,
+      "Text": "Get-LanguageConventions",
+      "StartOffset": 6394,
+      "EndOffset": 6417
+    },
+    "RuleName": "PSUseSingularNouns",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": "Get-LanguageConventions",
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": "Singularized correction of 'Get-LanguageConventions'",
+        "StartLineNumber": 189,
+        "StartColumnNumber": 10,
+        "EndLineNumber": 189,
+        "EndColumnNumber": 33,
+        "Text": "Get-LanguageConvention",
+        "Lines": [
+          "Get-LanguageConvention"
+        ],
+        "Start": {
+          "Line": 189,
+          "Column": 10
+        },
+        "End": {
+          "Line": 189,
+          "Column": 33
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 189,
+    "Column": 10
+  },
+  {
+    "Message": "The cmdlet 'Update-AllExistingAgents' uses a plural noun. A singular noun should be used instead.",
+    "Extent": {
+      "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+      "StartScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 383,
+        "ColumnNumber": 10,
+        "Line": "function Update-AllExistingAgents {\n",
+        "Offset": 15334
+      },
+      "EndScriptPosition": {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "LineNumber": 383,
+        "ColumnNumber": 34,
+        "Line": "function Update-AllExistingAgents {\n",
+        "Offset": 15358
+      },
+      "StartLineNumber": 383,
+      "StartColumnNumber": 10,
+      "EndLineNumber": 383,
+      "EndColumnNumber": 34,
+      "Text": "Update-AllExistingAgents",
+      "StartOffset": 15334,
+      "EndOffset": 15358
+    },
+    "RuleName": "PSUseSingularNouns",
+    "Severity": 1,
+    "ScriptName": "update-agent-context.ps1",
+    "ScriptPath": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+    "RuleSuppressionID": "Update-AllExistingAgents",
+    "SuggestedCorrections": [
+      {
+        "File": "C:\\Personal\\Files\\source\\repos\\PSSpecKit\\.specify\\scripts\\powershell\\update-agent-context.ps1",
+        "Description": "Singularized correction of 'Update-AllExistingAgents'",
+        "StartLineNumber": 383,
+        "StartColumnNumber": 10,
+        "EndLineNumber": 383,
+        "EndColumnNumber": 34,
+        "Text": "Update-AllExistingAgent",
+        "Lines": [
+          "Update-AllExistingAgent"
+        ],
+        "Start": {
+          "Line": 383,
+          "Column": 10
+        },
+        "End": {
+          "Line": 383,
+          "Column": 34
+        }
+      }
+    ],
+    "IsSuppressed": false,
+    "Line": 383,
+    "Column": 10
+  }
+]

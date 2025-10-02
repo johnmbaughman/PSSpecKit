@@ -1,0 +1,36 @@
+# MIT Licensed .gitignore (PowerShell project)
+# Copyright (c) 2025
+# Licensed under the MIT License. See LICENSE or project metadata for details.
+
+# PowerShell temporary files
+*.ps1xml
+*.psm1
+*.psd1
+*.psd1.updated
+
+# User-specific PowerShell module and cache
+$env:USERPROFILE\Documents\PowerShell\Modules\
+*.modulecache
+
+# Pester test output and temporary directories
+.tmp/
+tests/tmp*/
+
+# Zip output and downloaded archives
+*.zip
+
+# VS Code and editor metadata
+.vscode/
+*.code-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# GitHub Actions runner work and caches
+.github/workflows/**/workflows/_temp/
+.github/workflows/**/workflows/_tool_cache/
+
+# Node/npm (in case tooling is added)
+node_modules/
+npm-debug.log
