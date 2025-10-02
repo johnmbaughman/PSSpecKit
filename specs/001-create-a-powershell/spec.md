@@ -31,6 +31,7 @@
 
 ### Session 2025-10-01
 - Q: How should the script choose the target agent when none is provided? → A: Auto-select a sensible default agent (AI picks latest/popular)
+- Q: How should the script handle GitHub authentication (rate limits/private assets)? → A: Accept optional GITHUB_TOKEN env var and prefer it when present (recommended)
 
 ---
 
@@ -77,7 +78,7 @@ As a developer or automation agent, I want a PowerShell script that automaticall
 - **FR-006**: The system MUST validate the downloaded archive (e.g., check ZIP integrity) before extraction.
 
 *Notes*:
-- If authentication is required for higher rate limits, the script SHOULD accept an environment token (e.g., GITHUB_TOKEN) but MUST work unauthenticated with public releases.
+- If authentication is required for higher rate limits, the script MUST accept an optional environment token (e.g., GITHUB_TOKEN) and prefer it when present; when absent the script MUST still operate unauthenticated for public releases.
 
 ### Key Entities
 - **GitHub Release**: identified by tag `vX.Y.Z` and associated assets.
