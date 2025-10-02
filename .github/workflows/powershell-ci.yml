@@ -53,4 +53,4 @@ jobs:
 
       - name: Run integration tests only
         run: |
-          pwsh -NoProfile -Command "Import-Module Pester -RequiredVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests\integration -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
+          pwsh -NoProfile -Command "Import-Module Pester -MinimumVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests\integration -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
