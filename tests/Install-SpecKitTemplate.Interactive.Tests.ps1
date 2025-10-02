@@ -12,9 +12,14 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         # Simulate user typing 'custom-agent' when prompted
         Mock -CommandName Read-Host -MockWith { return 'custom-agent' }
 
-    Install-SpecKitTemplate -Agent $null -Shell 'ps' -Version 'latest' -Retry 1 -Force:$false -Path (Join-Path $PSScriptRoot 'tmp') -SaveZip:$false -Interactive | Out-Null
-    # When no assets exist and user supplies custom-agent, Find-ReleaseAsset will be called with that name; the function will then throw later
-    $global:SPEC_KIT_DOWNLOADER_EXCEPTION | Should -Not -BeNullOrEmpty
+        # Clear error list before test
+        $Error.Clear()
+        
+        $result = Install-SpecKitTemplate -Agent $null -Shell 'ps' -Version 'latest' -Retry 1 -Force:$false -Path (Join-Path $PSScriptRoot 'tmp') -SaveZip:$false -Interactive -ErrorAction SilentlyContinue
+        
+        # When no assets exist and user supplies custom-agent, Find-ReleaseAsset will be called with that name; the function will then throw later
+        $result | Should -Be $false
+        $Error.Count | Should -BeGreaterThan 0
     }
 
     It 'confirms single candidate and accepts default when user presses Enter' {
@@ -73,9 +78,14 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         # Simulate user typing 'custom-agent' when prompted
         Mock -CommandName Read-Host -MockWith { return 'custom-agent' }
 
-    Install-SpecKitTemplate -Agent $null -Shell 'ps' -Version 'latest' -Retry 1 -Force:$false -Path (Join-Path $PSScriptRoot 'tmp') -SaveZip:$false -Interactive | Out-Null
-    # When no assets exist and user supplies custom-agent, Find-ReleaseAsset will be called with that name; the function will then throw later
-    $global:SPEC_KIT_DOWNLOADER_EXCEPTION | Should -Not -BeNullOrEmpty
+        # Clear error list before test
+        $Error.Clear()
+        
+        $result = Install-SpecKitTemplate -Agent $null -Shell 'ps' -Version 'latest' -Retry 1 -Force:$false -Path (Join-Path $PSScriptRoot 'tmp') -SaveZip:$false -Interactive -ErrorAction SilentlyContinue
+        
+        # When no assets exist and user supplies custom-agent, Find-ReleaseAsset will be called with that name; the function will then throw later
+        $result | Should -Be $false
+        $Error.Count | Should -BeGreaterThan 0
     }
 
     It 'confirms single candidate and accepts default when user presses Enter' {

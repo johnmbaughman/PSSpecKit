@@ -110,7 +110,7 @@ function Install-SpecKitTemplate {
                 if ($Interactive -and -not $env:CI) {
                     Write-Info "Multiple agents found: $($candidates -join ', '); interactive selection enabled"
                     $i = 0
-                    foreach ($c in $candidates) { Write-Host "[$i] $c"; $i++ }
+                    foreach ($c in $candidates) { Write-Information "[$i] $c" -InformationAction Continue; $i++ }
                     $choice = Read-Host 'Select an agent index'
                     $Agent = $candidates[([int]$choice)]
                 } else {
@@ -142,10 +142,10 @@ function Install-SpecKitTemplate {
         Write-Info "Success: templates extracted to $Path"
         return $Path
     } catch {
-        # Log and record the exception for callers. Return $false so unit tests that call the function
+        # Log error and write to error stream. Return $false so unit tests that call the function
         # directly can assert on boolean failure without dealing with thrown exceptions.
         Write-Err "ERROR: $_"
-        $global:SPEC_KIT_DOWNLOADER_EXCEPTION = $_
+        Write-Error -Message "Failed to install spec-kit template: $_" -ErrorAction Continue
         return $false
     }
 }
