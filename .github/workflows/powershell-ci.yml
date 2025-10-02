@@ -23,8 +23,8 @@ jobs:
       
       - name: Install PSScriptAnalyzer and Pester
         run: |
-          pwsh -Command "Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense"
-          pwsh -Command "Install-Module -Name Pester -MinimumVersion 5.0.0 -Force -Scope CurrentUser -AcceptLicense"
+          Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense
+          Install-Module -Name Pester -MinimumVersion 5.0.0 -Force -Scope CurrentUser -AcceptLicense
 
       - name: Enforce no absolute paths in scripts
         run: |
