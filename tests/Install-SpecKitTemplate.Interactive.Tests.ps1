@@ -28,9 +28,9 @@ Describe 'Install-SpecKitTemplate interactive flows' {
 
         # Also mock Save-ReleaseAsset and Expand-SafeArchive to avoid network and disk operations
     Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $asset }
-    Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
-        Mock -CommandName Test-ZipArchive -MockWith { return $true }
-        Mock -CommandName Expand-SafeArchive -MockWith { return $true }
+    Mock -CommandName Save-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
+        Mock -CommandName Test-ZipArchive -ModuleName PSSpecKit -MockWith { return $true }
+        Mock -CommandName Expand-SafeArchive -ModuleName PSSpecKit -MockWith { return $true }
 
         $tmp = Join-Path $PSScriptRoot 'tmp2'
         if (Test-Path $tmp) { Remove-Item $tmp -Recurse -Force }
@@ -49,9 +49,9 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         Mock -CommandName Read-Host -MockWith { return '1' }
 
     Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $a2 }
-    Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
-        Mock -CommandName Test-ZipArchive -MockWith { return $true }
-        Mock -CommandName Expand-SafeArchive -MockWith { return $true }
+    Mock -CommandName Save-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
+        Mock -CommandName Test-ZipArchive -ModuleName PSSpecKit -MockWith { return $true }
+        Mock -CommandName Expand-SafeArchive -ModuleName PSSpecKit -MockWith { return $true }
 
         $tmp = Join-Path $PSScriptRoot 'tmp3'
         if (Test-Path $tmp) { Remove-Item $tmp -Recurse -Force }
@@ -89,9 +89,9 @@ Describe 'Install-SpecKitTemplate interactive flows' {
 
         # Also mock Save-ReleaseAsset and Expand-SafeArchive to avoid network and disk operations
     Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $asset }
-    Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
-        Mock -CommandName Test-ZipArchive -MockWith { return $true }
-        Mock -CommandName Expand-SafeArchive -MockWith { return $true }
+    Mock -CommandName Save-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
+        Mock -CommandName Test-ZipArchive -ModuleName PSSpecKit -MockWith { return $true }
+        Mock -CommandName Expand-SafeArchive -ModuleName PSSpecKit -MockWith { return $true }
 
         $tmp = Join-Path $PSScriptRoot 'tmp2'
         if (Test-Path $tmp) { Remove-Item $tmp -Recurse -Force }
@@ -110,9 +110,9 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         Mock -CommandName Read-Host -MockWith { return '1' }
 
     Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $a2 }
-    Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
-        Mock -CommandName Test-ZipArchive -MockWith { return $true }
-        Mock -CommandName Expand-SafeArchive -MockWith { return $true }
+    Mock -CommandName Save-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
+        Mock -CommandName Test-ZipArchive -ModuleName PSSpecKit -MockWith { return $true }
+        Mock -CommandName Expand-SafeArchive -ModuleName PSSpecKit -MockWith { return $true }
 
         $tmp = Join-Path $PSScriptRoot 'tmp3'
         if (Test-Path $tmp) { Remove-Item $tmp -Recurse -Force }
