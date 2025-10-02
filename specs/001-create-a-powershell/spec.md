@@ -27,6 +27,13 @@
 
 ---
 
+## Clarifications
+
+### Session 2025-10-01
+- Q: How should the script choose the target agent when none is provided? → A: Auto-select a sensible default agent (AI picks latest/popular)
+
+---
+
 ## ⚡ Quick Guidelines
 - ✅ Focus on WHAT users need and WHY
 - ❌ Avoid HOW to implement (no tech stack, APIs, code structure)
@@ -65,7 +72,7 @@ As a developer or automation agent, I want a PowerShell script that automaticall
 - **FR-001**: The system MUST detect the latest release tag from https://github.com/github/spec-kit/releases using the repository's tags or release metadata.
 - **FR-002**: The system MUST select the appropriate release asset matching `spec-kit-template-[agent]-[ps|sh]-v[version].zip` for the requested agent and shell type.
 - **FR-003**: The system MUST download the selected ZIP asset and extract its contents into the current working directory.
-- **FR-004**: The system MUST provide CLI options: `--agent <name>`, `--shell <ps|sh>` (default `ps`), `--version <tag|latest>` (optional override), `--retry <count>` (optional), and `--force` (overwrite existing files).
+- **FR-004**: The system MUST provide CLI options: `--agent <name>`, `--shell <ps|sh>` (default `ps`), `--version <tag|latest>` (optional override), `--retry <count>` (optional), and `--force` (overwrite existing files). If `--agent` is omitted the script MUST auto-select a sensible default agent (AI-selected, latest/popular) and proceed; the user can override this behavior by providing `--agent` or `--interactive` to prompt.
 - **FR-005**: The system MUST exit with code 0 on success and non-zero with descriptive error messages on failure.
 - **FR-006**: The system MUST validate the downloaded archive (e.g., check ZIP integrity) before extraction.
 
@@ -89,7 +96,7 @@ As a developer or automation agent, I want a PowerShell script that automaticall
 ## Execution Status
 - [x] User description parsed
 - [x] Key concepts extracted
-- [x] Ambiguities marked (none required)
+- [x] Ambiguities marked (one clarification recorded)
 - [x] User scenarios defined
 - [x] Requirements generated
 - [x] Entities identified
