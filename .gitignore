@@ -4,6 +4,9 @@
 
 # PowerShell temporary files
 *.ps1xml
+# Don't ignore module files
+!PSSpecKit/**/*.psm1
+!PSSpecKit/**/*.psd1
 *.psm1
 *.psd1
 *.psd1.updated
