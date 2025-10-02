@@ -28,7 +28,7 @@ jobs:
 
       - name: Run PSScriptAnalyzer
         run: |
-          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path . -Recurse -CustomRulePath . -Settings .psscriptanalyzer.psd1"
+          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path . -Recurse -Settings .psscriptanalyzer.psd1"
 
       - name: Run Pester tests
         run: |
