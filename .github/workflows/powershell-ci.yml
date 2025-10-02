@@ -1,0 +1,36 @@
+name: PowerShell CI
+
+on:
+  push:
+    branches:
+      - 'v1_specsdev'
+      - '001-create-a-powershell'
+      - 'feature/**'
+  pull_request:
+    branches:
+      - 'v1_specsdev'
+      - 'main'
+
+jobs:
+  lint-and-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PowerShell
+        uses: actions/setup-powershell@v2
+        with:
+          version: '7.4'
+
+      - name: Install PSScriptAnalyzer and Pester
+        run: |
+          pwsh -Command "Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense"
+          pwsh -Command "Install-Module -Name Pester -MinimumVersion 5.0.0 -Force -Scope CurrentUser -AcceptLicense"
+
+      - name: Run PSScriptAnalyzer
+        run: |
+          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path . -Recurse -CustomRulePath . -Settings .psscriptanalyzer.psd1"
+
+      - name: Run Pester tests
+        run: |
+          pwsh -NoProfile -Command "Import-Module Pester -Force; Invoke-Pester -Script .\tests -EnableExit"
