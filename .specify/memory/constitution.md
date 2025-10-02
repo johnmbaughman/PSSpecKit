@@ -29,6 +29,8 @@ All authored PowerShell code MUST follow Microsoft PowerShell best practices. Th
 - Static analysis using PSScriptAnalyzer with a project baseline is REQUIRED; rules MAY be tightened per-module. Violations MUST be addressed before merging.
 - Code MUST be idempotent where applicable and avoid implicit global state; side-effects MUST be explicit and documented.
 
+Path usage policy: NO absolute filesystem paths are permitted inside committed scripts or modules. All filesystem paths referenced by scripts MUST be relative to the script/module root and must be resolved at runtime using the script's location (for example, $PSScriptRoot) or a small, documented repository-root resolution helper called from the script root. Hard-coded absolute paths will fail review and MUST be removed before merge.
+
 Rationale: Enforcing PowerShell-native patterns improves discoverability, reusability, and lowers the cognitive load for maintainers and users.
 
 ### II. Testing Standards (Pester & CI Gates) (NON-NEGOTIABLE)
