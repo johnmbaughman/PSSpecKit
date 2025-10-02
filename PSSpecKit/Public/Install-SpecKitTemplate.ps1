@@ -45,6 +45,7 @@ function Install-SpecKitTemplate {
     Returns the path where templates were extracted, or $false on failure.
     #>
     [CmdletBinding()]
+    [OutputType([string], [bool])]
     param(
         [string]$Agent,
         [ValidateSet('ps','sh')][string]$Shell = 'ps',

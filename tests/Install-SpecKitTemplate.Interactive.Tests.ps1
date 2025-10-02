@@ -7,7 +7,7 @@ Describe 'Install-SpecKitTemplate interactive flows' {
     It 'prompts and accepts typed agent when no candidates found' {
         # Mock a release with no assets
         $fakeRelease = [pscustomobject]@{ assets = @() }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Simulate user typing 'custom-agent' when prompted
         Mock -CommandName Read-Host -MockWith { return 'custom-agent' }
@@ -21,13 +21,13 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         # Create a fake release with one matching asset
         $asset = [pscustomobject]@{ name = 'spec-kit-template-myagent-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/asset.zip' }
         $fakeRelease = [pscustomobject]@{ assets = @($asset) }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Mock Read-Host to simulate pressing Enter (empty input)
         Mock -CommandName Read-Host -MockWith { return '' }
 
         # Also mock Save-ReleaseAsset and Expand-SafeArchive to avoid network and disk operations
-    Mock -CommandName Find-ReleaseAsset -MockWith { param($Release,$Agent,$Shell) return $asset }
+    Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $asset }
     Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
         Mock -CommandName Test-ZipArchive -MockWith { return $true }
         Mock -CommandName Expand-SafeArchive -MockWith { return $true }
@@ -43,12 +43,12 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         $a1 = [pscustomobject]@{ name = 'spec-kit-template-alpha-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/a1.zip' }
         $a2 = [pscustomobject]@{ name = 'spec-kit-template-beta-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/a2.zip' }
         $fakeRelease = [pscustomobject]@{ assets = @($a1,$a2) }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Simulate entering index '1' to pick 'beta'
         Mock -CommandName Read-Host -MockWith { return '1' }
 
-    Mock -CommandName Find-ReleaseAsset -MockWith { param($Release,$Agent,$Shell) return $a2 }
+    Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $a2 }
     Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
         Mock -CommandName Test-ZipArchive -MockWith { return $true }
         Mock -CommandName Expand-SafeArchive -MockWith { return $true }
@@ -68,7 +68,7 @@ Describe 'Install-SpecKitTemplate interactive flows' {
     It 'prompts and accepts typed agent when no candidates found' {
         # Mock a release with no assets
         $fakeRelease = [pscustomobject]@{ assets = @() }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Simulate user typing 'custom-agent' when prompted
         Mock -CommandName Read-Host -MockWith { return 'custom-agent' }
@@ -82,13 +82,13 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         # Create a fake release with one matching asset
         $asset = [pscustomobject]@{ name = 'spec-kit-template-myagent-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/asset.zip' }
         $fakeRelease = [pscustomobject]@{ assets = @($asset) }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Mock Read-Host to simulate pressing Enter (empty input)
         Mock -CommandName Read-Host -MockWith { return '' }
 
         # Also mock Save-ReleaseAsset and Expand-SafeArchive to avoid network and disk operations
-    Mock -CommandName Find-ReleaseAsset -MockWith { param($Release,$Agent,$Shell) return $asset }
+    Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $asset }
     Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
         Mock -CommandName Test-ZipArchive -MockWith { return $true }
         Mock -CommandName Expand-SafeArchive -MockWith { return $true }
@@ -104,12 +104,12 @@ Describe 'Install-SpecKitTemplate interactive flows' {
         $a1 = [pscustomobject]@{ name = 'spec-kit-template-alpha-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/a1.zip' }
         $a2 = [pscustomobject]@{ name = 'spec-kit-template-beta-ps-v1.0.0.zip'; browser_download_url = 'http://example.com/a2.zip' }
         $fakeRelease = [pscustomobject]@{ assets = @($a1,$a2) }
-        Mock -CommandName Get-LatestRelease -MockWith { return $fakeRelease }
+        Mock -CommandName Get-LatestRelease -ModuleName PSSpecKit -MockWith { return $fakeRelease }
 
         # Simulate entering index '1' to pick 'beta'
         Mock -CommandName Read-Host -MockWith { return '1' }
 
-    Mock -CommandName Find-ReleaseAsset -MockWith { param($Release,$Agent,$Shell) return $a2 }
+    Mock -CommandName Find-ReleaseAsset -ModuleName PSSpecKit -MockWith { param($Release,$Agent,$Shell) return $a2 }
     Mock -CommandName Save-ReleaseAsset -MockWith { param($Asset,$OutPath) return (Join-Path ([System.IO.Path]::GetTempPath()) $Asset.name) }
         Mock -CommandName Test-ZipArchive -MockWith { return $true }
         Mock -CommandName Expand-SafeArchive -MockWith { return $true }
