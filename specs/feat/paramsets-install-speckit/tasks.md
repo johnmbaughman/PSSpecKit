@@ -7,8 +7,8 @@
 
 Follow these executable tasks in order. Tasks marked with **[P]** can run in parallel because they modify different files and have no dependency overlap. Each task lists required files, dependencies, and success criteria so an LLM or human can execute it without extra context.
 
-## Phase 3.1 – Setup
-- [ ] **T001** Prepare host simulation helpers for tests
+-## Phase 3.1 – Setup
+- [X] **T001** Prepare host simulation helpers for tests
   - Files: `tests/Support/HostMocks.ps1`
   - Work: Add a reusable helper module exposing `New-TestHostInteractive`, `New-TestHostNonInteractive`, and prompt transcript utilities so unit/integration tests can simulate TTY/non-TTY behavior without altering global host state.
   - Depends on: —
