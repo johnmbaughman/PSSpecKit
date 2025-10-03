@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - 'v1_specsdev'
-      - '001-create-a-powershell'
       - 'feature/**'
+      - 'feat/**'
   pull_request:
     branches:
       - 'v1_specsdev'
