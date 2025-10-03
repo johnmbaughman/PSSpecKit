@@ -36,14 +36,34 @@ pwsh tools\Install-SpecKitTemplate.ps1
 pwsh tools\Install-SpecKitTemplate.ps1 -Agent octo -Shell ps -Path .\templates -Force
 #>
 
+[CmdletBinding(DefaultParameterSetName='Noninteractive')]
 param(
+    # Noninteractive-only parameters
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Agent,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [ValidateSet('ps','sh')][string]$Shell = 'ps',
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Version = 'latest',
+
+    # Present in both parameter sets
+    [Parameter(ParameterSetName='Interactive')]
+    [Parameter(ParameterSetName='Noninteractive')]
     [int]$Retry = 3,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [switch]$Force,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Path = (Get-Location).Path,
+
+    [Parameter(ParameterSetName='Interactive')]
+    [Parameter(ParameterSetName='Noninteractive')]
     [switch]$SaveZip,
+
+    [Parameter(ParameterSetName='Interactive')]
     [switch]$Interactive
 )
 
@@ -196,14 +216,32 @@ function Expand-SafeArchive {
 }
 
 function Install-SpecKitTemplate {
+    [CmdletBinding(DefaultParameterSetName='Noninteractive')]
     param(
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Agent,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [ValidateSet('ps','sh')][string]$Shell = 'ps',
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Version = 'latest',
+
+        [Parameter(ParameterSetName='Interactive')]
+        [Parameter(ParameterSetName='Noninteractive')]
         [int]$Retry = 3,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [switch]$Force,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Path = (Get-Location).Path,
+
+        [Parameter(ParameterSetName='Interactive')]
+        [Parameter(ParameterSetName='Noninteractive')]
         [switch]$SaveZip,
+
+        [Parameter(ParameterSetName='Interactive')]
         [switch]$Interactive
     )
 
@@ -212,6 +250,38 @@ function Install-SpecKitTemplate {
 
         $owner = 'github'
         $repo = 'spec-kit'
+
+        # If running in interactive parameter set, prompt the user for values that
+        # are intentionally bypassed by the Interactive parameter set.
+        if ($Interactive -and -not $env:CI) {
+            # Prompt for Agent
+            $promptAgent = Read-Host 'Agent name (press Enter to use "default")'
+            if ($promptAgent) { $Agent = $promptAgent } elseif (-not $Agent) { $Agent = 'default' }
+
+            # Prompt for Shell with default
+            $promptShell = Read-Host 'Shell (ps/sh) [ps]'
+            if ($promptShell -and ($promptShell -in 'ps','sh')) { $Shell = $promptShell } else { $Shell = 'ps' }
+
+            # Prompt for Version with default
+            $promptVersion = Read-Host 'Version tag or "latest" [latest]'
+            if ($promptVersion) { $Version = $promptVersion } else { $Version = 'latest' }
+
+            # Prompt for Path
+            $promptPath = Read-Host "Target extraction Path [$(Get-Location).Path]"
+            if ($promptPath) { $Path = $promptPath } else { $Path = (Get-Location).Path }
+
+            # Prompt for Force override confirmation if files exist
+            $existing = $false
+            if (Test-Path $Path) { $existing = (Get-ChildItem -Path $Path -Recurse -File -ErrorAction SilentlyContinue).Count -gt 0 }
+            if ($existing) {
+                $confirmForce = Read-Host 'Existing files detected in target path. Overwrite existing files? (y/N)'
+                if ($confirmForce -and $confirmForce -match '^[yY]') { $Force = $true } else { $Force = $false }
+            } else {
+                # No existing files; ask if they want to force future overwrites
+                $confirmForce = Read-Host 'Overwrite existing files if found later? (y/N)'
+                if ($confirmForce -and $confirmForce -match '^[yY]') { $Force = $true } else { $Force = $false }
+            }
+        }
 
         # Determine release
         if ($Version -ne 'latest') {
@@ -226,8 +296,8 @@ function Install-SpecKitTemplate {
 
     if (-not $release) { throw [System.Exception] 'Release not found' }
 
-        # Agent auto-selection
-        if (-not $Agent) {
+    # Agent auto-selection
+    if (-not $Agent) {
             # Try to infer agent from release body or assets (simplified heuristic)
             $candidates = @()
             foreach ($a in $release.assets) {
