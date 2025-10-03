@@ -1,21 +1,21 @@
 <!--
 Sync Impact Report
-Version change: none → 1.0.0
+Version change: 1.0.0 → 1.0.1
 Modified principles:
-- NEW: Code Quality & Style (PowerShell-centric)
-- NEW: Testing Standards (Pester & CI gates)
+- UPDATED: Code Quality & Style (explicit PSScriptAnalyzer enforcement & Microsoft PowerShell scripting best practices)
+- NEW/CLARIFY: Testing Standards (Pester & CI gates clarified to include static analysis gating)
 - NEW: User Experience Consistency (cmdlet UX, help, output contracts)
 - NEW: Performance Requirements (benchmarks, memory/latency goals)
-Added sections:
+Added/clarified sections:
 - Development Constraints (PowerShell module rules, compatibility targets)
-- Development Workflow (TDD, PR review checklist, PSScriptAnalyzer gating)
+- Development Workflow (TDD, PR review checklist, explicit PSScriptAnalyzer gating)
 Removed sections: none
-Templates requiring updates:
-- .specify/templates/plan-template.md ✅ inspected (Constitution Check placeholder present; aligns with new principles)
+Templates requiring updates / inspection:
+- .specify/templates/plan-template.md ✅ inspected (Constitution Check placeholder present; aligns with updated principles)
 - .specify/templates/spec-template.md ✅ inspected (requirements gating aligns)
 - .specify/templates/tasks-template.md ✅ inspected (task rules align)
 Follow-up TODOs:
-- TODO(RATIFICATION_DATE): Confirm historical ratification date if this is not the first adoption (left as ratified today)
+- None deferred. RATIFICATION_DATE retained as original adoption date.
 -->
 
 # PSSpecKit Constitution
@@ -23,11 +23,12 @@ Follow-up TODOs:
 ## Core Principles
 
 ### I. Code Quality & Style (PowerShell-centric)
-All authored PowerShell code MUST follow Microsoft PowerShell best practices. This includes:
-- Consistent, discoverable names following Verb-Noun cmdlet conventions (approved verbs from Microsoft). Module, function, and parameter names MUST be clear and purpose-driven.
-- Script and module layout MUST follow common PowerShell module structure (ExportedFunctions, Public/Private separation, module manifest when applicable).
-- Static analysis using PSScriptAnalyzer with a project baseline is REQUIRED; rules MAY be tightened per-module. Violations MUST be addressed before merging.
-- Code MUST be idempotent where applicable and avoid implicit global state; side-effects MUST be explicit and documented.
+All authored PowerShell code MUST meet Microsoft PowerShell scripting best practices and pass the project's PSScriptAnalyzer quality checks. This is a mandatory, CI-enforced gate. Specifically:
+- All code MUST adhere to Microsoft-approved naming conventions (Verb-Noun) and use discoverable, purpose-driven names for modules, functions and parameters.
+- Script and module layouts MUST follow common PowerShell module structure (ExportedFunctions, Public/Private separation, and a module manifest when applicable).
+- Static analysis using PSScriptAnalyzer against a project baseline configuration is REQUIRED; module-level rules MAY be tightened. CI MUST fail if PSScriptAnalyzer violations are present and violations MUST be addressed before merging.
+- All scripts and modules MUST document any accepted deviations from the baseline (with rationale) in the PR; exceptions are time-limited and require maintainer approval.
+- Code MUST be idempotent where applicable, avoid implicit global state, and make side-effects explicit and documented.
 
 Path usage policy: NO absolute filesystem paths are permitted inside committed scripts or modules. All filesystem paths referenced by scripts MUST be relative to the script/module root and must be resolved at runtime using the script's location (for example, $PSScriptRoot) or a small, documented repository-root resolution helper called from the script root. Hard-coded absolute paths will fail review and MUST be removed before merge.
 
@@ -73,4 +74,4 @@ The Constitution defines mandatory practices for development and review. Amendme
 - Versioning Policy: The Constitution uses semantic versioning: MAJOR for breaking governance changes (removals or redefinitions), MINOR for new principles or material expansions, PATCH for wording/clarity fixes. The author of the PR MUST indicate the expected bump and rationale.
 - Compliance: The `Constitution Check` step in `.specify/templates/plan-template.md` and related templates MUST be evaluated during planning. CI tooling and reviewers are responsible for enforcing gates.
 
-**Version**: 1.0.0 | **Ratified**: 2025-10-01 | **Last Amended**: 2025-10-01
+**Version**: 1.0.1 | **Ratified**: 2025-10-01 | **Last Amended**: 2025-10-02
