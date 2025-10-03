@@ -50,6 +50,9 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
+# Script-scoped variable to capture exception details for error handling
+$script:LastException = $null
+
 # Exit code constants
 $EXIT_SUCCESS = 0
 $EXIT_GENERIC_ERROR = 1
@@ -257,7 +260,7 @@ function Install-SpecKitTemplate {
                         if ($Interactive -and -not $env:CI) {
                             Write-Info "Multiple agents found: $($candidates -join ', '); interactive selection enabled"
                             $i = 0
-                            foreach ($c in $candidates) { Write-Host "[$i] $c"; $i++ }
+                            foreach ($c in $candidates) { Write-Information "[$i] $c" -InformationAction Continue; $i++ }
                             $choice = Read-Host 'Select an agent index'
                             $Agent = $candidates[([int]$choice)]
                         } else {
@@ -289,10 +292,11 @@ function Install-SpecKitTemplate {
         Write-Info "Success: templates extracted to $Path"
         return $Path
     } catch {
-        # Log and record the exception for callers. Return $false so unit tests that call the function
+        # Log error and store exception for callers. Return $false so unit tests that call the function
         # directly can assert on boolean failure without dealing with thrown exceptions.
         Write-Err "ERROR: $_"
-        $global:SPEC_KIT_DOWNLOADER_EXCEPTION = $_
+        $script:LastException = $_
+        Write-Error -Message "Failed to install spec-kit template: $_" -ErrorAction Continue
         return $false
     }
 }
@@ -306,8 +310,8 @@ if ($MyInvocation.InvocationName -ne '.') {
         Write-Output $result
         exit $EXIT_SUCCESS
     } else {
-        # If the function returned $false, we may have recorded the exception in the global variable.
-        $ex = $global:SPEC_KIT_DOWNLOADER_EXCEPTION
+        # If the function returned $false, check the exception recorded in the script-scoped variable.
+        $ex = $script:LastException
         if ($ex -is [System.Net.WebException]) {
             Write-Err "Network error: $ex"
             exit $EXIT_NETWORK_ERROR

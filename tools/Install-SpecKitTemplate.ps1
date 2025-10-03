@@ -36,19 +36,42 @@ pwsh tools\Install-SpecKitTemplate.ps1
 pwsh tools\Install-SpecKitTemplate.ps1 -Agent octo -Shell ps -Path .\templates -Force
 #>
 
+[CmdletBinding(DefaultParameterSetName='Noninteractive')]
 param(
+    # Noninteractive-only parameters
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Agent,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [ValidateSet('ps','sh')][string]$Shell = 'ps',
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Version = 'latest',
+
+    # Present in both parameter sets
+    [Parameter(ParameterSetName='Interactive')]
+    [Parameter(ParameterSetName='Noninteractive')]
     [int]$Retry = 3,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [switch]$Force,
+
+    [Parameter(ParameterSetName='Noninteractive')]
     [string]$Path = (Get-Location).Path,
+
+    [Parameter(ParameterSetName='Interactive')]
+    [Parameter(ParameterSetName='Noninteractive')]
     [switch]$SaveZip,
+
+    [Parameter(ParameterSetName='Interactive')]
     [switch]$Interactive
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+# Script-scoped variable to capture exception details for error handling
+$script:LastException = $null
 
 # Exit code constants
 $EXIT_SUCCESS = 0
@@ -193,14 +216,32 @@ function Expand-SafeArchive {
 }
 
 function Install-SpecKitTemplate {
+    [CmdletBinding(DefaultParameterSetName='Noninteractive')]
     param(
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Agent,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [ValidateSet('ps','sh')][string]$Shell = 'ps',
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Version = 'latest',
+
+        [Parameter(ParameterSetName='Interactive')]
+        [Parameter(ParameterSetName='Noninteractive')]
         [int]$Retry = 3,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [switch]$Force,
+
+        [Parameter(ParameterSetName='Noninteractive')]
         [string]$Path = (Get-Location).Path,
+
+        [Parameter(ParameterSetName='Interactive')]
+        [Parameter(ParameterSetName='Noninteractive')]
         [switch]$SaveZip,
+
+        [Parameter(ParameterSetName='Interactive')]
         [switch]$Interactive
     )
 
@@ -209,6 +250,38 @@ function Install-SpecKitTemplate {
 
         $owner = 'github'
         $repo = 'spec-kit'
+
+        # If running in interactive parameter set, prompt the user for values that
+        # are intentionally bypassed by the Interactive parameter set.
+        if ($Interactive -and -not $env:CI) {
+            # Prompt for Agent
+            $promptAgent = Read-Host 'Agent name (press Enter to use "default")'
+            if ($promptAgent) { $Agent = $promptAgent } elseif (-not $Agent) { $Agent = 'default' }
+
+            # Prompt for Shell with default
+            $promptShell = Read-Host 'Shell (ps/sh) [ps]'
+            if ($promptShell -and ($promptShell -in 'ps','sh')) { $Shell = $promptShell } else { $Shell = 'ps' }
+
+            # Prompt for Version with default
+            $promptVersion = Read-Host 'Version tag or "latest" [latest]'
+            if ($promptVersion) { $Version = $promptVersion } else { $Version = 'latest' }
+
+            # Prompt for Path
+            $promptPath = Read-Host "Target extraction Path [$(Get-Location).Path]"
+            if ($promptPath) { $Path = $promptPath } else { $Path = (Get-Location).Path }
+
+            # Prompt for Force override confirmation if files exist
+            $existing = $false
+            if (Test-Path $Path) { $existing = (Get-ChildItem -Path $Path -Recurse -File -ErrorAction SilentlyContinue).Count -gt 0 }
+            if ($existing) {
+                $confirmForce = Read-Host 'Existing files detected in target path. Overwrite existing files? (y/N)'
+                if ($confirmForce -and $confirmForce -match '^[yY]') { $Force = $true } else { $Force = $false }
+            } else {
+                # No existing files; ask if they want to force future overwrites
+                $confirmForce = Read-Host 'Overwrite existing files if found later? (y/N)'
+                if ($confirmForce -and $confirmForce -match '^[yY]') { $Force = $true } else { $Force = $false }
+            }
+        }
 
         # Determine release
         if ($Version -ne 'latest') {
@@ -223,8 +296,8 @@ function Install-SpecKitTemplate {
 
     if (-not $release) { throw [System.Exception] 'Release not found' }
 
-        # Agent auto-selection
-        if (-not $Agent) {
+    # Agent auto-selection
+    if (-not $Agent) {
             # Try to infer agent from release body or assets (simplified heuristic)
             $candidates = @()
             foreach ($a in $release.assets) {
@@ -257,7 +330,7 @@ function Install-SpecKitTemplate {
                         if ($Interactive -and -not $env:CI) {
                             Write-Info "Multiple agents found: $($candidates -join ', '); interactive selection enabled"
                             $i = 0
-                            foreach ($c in $candidates) { Write-Host "[$i] $c"; $i++ }
+                            foreach ($c in $candidates) { Write-Information "[$i] $c" -InformationAction Continue; $i++ }
                             $choice = Read-Host 'Select an agent index'
                             $Agent = $candidates[([int]$choice)]
                         } else {
@@ -289,10 +362,11 @@ function Install-SpecKitTemplate {
         Write-Info "Success: templates extracted to $Path"
         return $Path
     } catch {
-        # Log and record the exception for callers. Return $false so unit tests that call the function
+        # Log error and store exception for callers. Return $false so unit tests that call the function
         # directly can assert on boolean failure without dealing with thrown exceptions.
         Write-Err "ERROR: $_"
-        $global:SPEC_KIT_DOWNLOADER_EXCEPTION = $_
+        $script:LastException = $_
+        Write-Error -Message "Failed to install spec-kit template: $_" -ErrorAction Continue
         return $false
     }
 }
@@ -306,8 +380,8 @@ if ($MyInvocation.InvocationName -ne '.') {
         Write-Output $result
         exit $EXIT_SUCCESS
     } else {
-        # If the function returned $false, we may have recorded the exception in the global variable.
-        $ex = $global:SPEC_KIT_DOWNLOADER_EXCEPTION
+        # If the function returned $false, check the exception recorded in the script-scoped variable.
+        $ex = $script:LastException
         if ($ex -is [System.Net.WebException]) {
             Write-Err "Network error: $ex"
             exit $EXIT_NETWORK_ERROR

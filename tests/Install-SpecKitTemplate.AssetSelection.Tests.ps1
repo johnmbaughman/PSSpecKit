@@ -1,6 +1,6 @@
 Describe 'Install-SpecKitTemplate - Asset selection (T003)' {
     BeforeAll {
-    . $PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
         # Create a fake release object
         $global:fakeRelease = [pscustomobject]@{
             assets = @(
@@ -31,7 +31,7 @@ Describe 'Install-SpecKitTemplate - Asset selection (T003)' {
 }
 Describe 'Install-SpecKitTemplate - Asset selection (T003)' {
     BeforeAll {
-    . $PSScriptRoot\..\tools\Install-SpecKitTemplate.ps1
+        Import-Module "$PSScriptRoot\..\PSSpecKit\PSSpecKit.psd1" -Force
         # Create a fake release object
         $global:fakeRelease = [pscustomobject]@{
             assets = @(

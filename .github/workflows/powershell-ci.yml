@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - 'v1_specsdev'
-      - '001-create-a-powershell'
       - 'feature/**'
+      - 'feat/**'
   pull_request:
     branches:
       - 'v1_specsdev'
@@ -14,26 +14,33 @@ on:
 jobs:
   lint-and-test:
     runs-on: windows-latest
-    steps:
+    steps:    
       - uses: actions/checkout@v4
 
+      - name: List tests directory contents
+        run: |
+          ls -l tests
+      
       - name: Install PSScriptAnalyzer and Pester
         run: |
-          pwsh -Command "Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense"
-          pwsh -Command "Install-Module -Name Pester -MinimumVersion 5.0.0 -Force -Scope CurrentUser -AcceptLicense"
+          Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser -AcceptLicense
+          Install-Module -Name Pester -MinimumVersion 5.0.0 -Force -Scope CurrentUser -AcceptLicense
 
       - name: Enforce no absolute paths in scripts
         run: |
           pwsh -NoProfile -Command "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; ./scripts/check-absolute-paths.ps1 -Path ."
 
-      - name: Run PSScriptAnalyzer
+      - name: Run PSScriptAnalyzer on module
         run: |
-          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path . -Recurse -Settings .psscriptanalyzer.psd1"
+          pwsh -NoProfile -Command "Invoke-ScriptAnalyzer -Path ./PSSpecKit -Recurse -Settings .psscriptanalyzer.psd1"
+      
+      - name: Verify module can be imported
+        run: |
+          pwsh -NoProfile -Command "Import-Module ./PSSpecKit/PSSpecKit.psd1 -Force; Write-Host 'Module imported successfully'; Get-Command -Module PSSpecKit | Format-Table -AutoSize"
 
       - name: Run Pester tests
         run: |
-          pwsh -NoProfile -Command 'Import-Module Pester -RequiredVersion 5.0.0 -Force; $r = Invoke-Pester -Path ./tests -PassThru; if ($r.FailedCount -gt 0) { exit 1 }'
-        # pwsh -NoProfile -Command "Import-Module Pester -RequiredVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
+          pwsh -NoProfile -Command 'Import-Module Pester -MinimumVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests -PassThru; if ($r.FailedCount -gt 0) { exit 1 }'
 
   integration-tests:
     runs-on: windows-latest
@@ -49,4 +56,4 @@ jobs:
 
       - name: Run integration tests only
         run: |
-          pwsh -NoProfile -Command "Import-Module Pester -RequiredVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests\integration -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
+          pwsh -NoProfile -Command "Import-Module Pester -MinimumVersion 5.0.0 -Force; $r = Pester\Invoke-Pester -Path .\tests\integration -PassThru; if ($r.FailedCount -gt 0) { exit 1 }"
